@@ -139,24 +139,118 @@
   --redefine-box-shadow-flat-hover: var(--shadow-color-2) 0px 1px 4px 0px, var(--shadow-color-1) 0px 0px 0px 1px, var(--shadow-color-1) 0px 0px 0px 1px inset;
   --mermaid-theme: $dark-mermaid-theme;
 }
-.category-name {
-  color: var(--second-text-color);
-  font-size: 2.8rem;
-  font-weight: 600;
-  padding-bottom: 20px;
-  margin-bottom: 46px;
-  border-bottom: 1px solid var(--shadow-color-1);
+body {
+  letter-spacing: 0.01em;
 }
-.category-name i {
-  color: var(--second-text-color);
+.navbar-container {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.03);
+}
+.navbar-container .navbar-content {
+  padding: 0 10px;
+}
+.navbar-container .navbar-item i,
+.navbar-container .icon-item i {
+  font-size: 0.82em;
+}
+.home-sidebar-container .sidebar-content,
+.home-sidebar-container .sidebar-links {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.028), 0 0 0 1px rgba(0,0,0,0.04);
+}
+.home-sidebar-container .sidebar-links .links {
+  min-height: 36px;
+}
+.home-sidebar-container .sidebar-links .links i {
+  transform: translateY(0.5px);
+}
+.home-content-container .home-article-list .home-article-item {
+  overflow: hidden;
+}
+.home-content-container .home-article-list .home-article-item:hover {
+  box-shadow: 0 14px 34px rgba(0,0,0,0.038), 0 0 0 1px rgba(0,0,0,0.04);
+}
+.home-content-container .home-article-list .home-article-item .home-article-content {
+  max-width: 68ch;
+}
+.home-content-container .home-article-list .home-article-item .home-article-meta-info-container i {
+  font-size: 0.78rem;
+  opacity: 0.8;
+}
+.home-content-container .home-article-list .home-article-item .home-article-meta-info-container a i {
+  font-size: 0.72rem;
+}
+.post-page-container .article-content-container,
+.page-template-container {
+  border: 1px solid var(--border-color);
+  box-shadow: 0 12px 34px rgba(0,0,0,0.03), 0 0 0 1px rgba(0,0,0,0.035);
+}
+.post-page-container .article-content-container {
+  padding: 42px 46px;
 }
 @media (max-width: 768px) {
-  .category-name {
-    font-size: 2.52rem;
+  .post-page-container .article-content-container {
+    padding: 34px 30px;
   }
 }
 @media (max-width: 640px) {
-  .category-name {
-    font-size: 2.24rem;
+  .post-page-container .article-content-container {
+    padding: 1.2rem 0.2rem;
   }
+}
+.page-template-container {
+  padding: 40px 44px;
+}
+@media (max-width: 768px) {
+  .page-template-container {
+    padding: 34px 28px;
+  }
+}
+@media (max-width: 640px) {
+  .page-template-container {
+    padding: 1.2rem 0.2rem;
+  }
+}
+.markdown-body p:not(.not-markdown),
+.markdown-body li:not(.not-markdown) {
+  line-height: 1.9;
+  letter-spacing: 0.012em;
+}
+.markdown-body p:not(.not-markdown) {
+  color: var(--default-text-color);
+}
+.markdown-body h1:not(.not-markdown),
+.markdown-body h2:not(.not-markdown),
+.markdown-body h3:not(.not-markdown),
+.markdown-body h4:not(.not-markdown),
+.markdown-body h5:not(.not-markdown),
+.markdown-body h6:not(.not-markdown) {
+  color: var(--first-text-color);
+}
+.markdown-body h1:not(.not-markdown) {
+  letter-spacing: -0.03em;
+}
+.markdown-body h2:not(.not-markdown) {
+  letter-spacing: -0.028em;
+}
+.markdown-body h3:not(.not-markdown) {
+  letter-spacing: -0.02em;
+}
+.markdown-body a:not(.not-markdown) {
+  color: var(--second-text-color);
+}
+.markdown-body a:not(.not-markdown) .fas,
+.markdown-body a:not(.not-markdown) .far,
+.markdown-body a:not(.not-markdown) .fab,
+.markdown-body a:not(.not-markdown) .fa-solid,
+.markdown-body a:not(.not-markdown) .fa-regular,
+.markdown-body a:not(.not-markdown) .fa-brands {
+  font-size: 0.76rem;
+  margin: 0 1px 0 5px;
+}
+.site-info,
+.announcement,
+.home-article-meta-info-container,
+.home-article-meta-info-container a,
+.page-template-container .page-template-content,
+.post-page-container .article-content-container .article-content {
+  color: var(--default-text-color);
 }

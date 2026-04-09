@@ -1,28 +1,28 @@
 :root {
-  --background-color: #fff;
-  --background-color-transparent: rgba(255,255,255,0.6);
-  --background-color-transparent-15: rgba(255,255,255,0.15);
-  --background-color-transparent-40: rgba(255,255,255,0.4);
-  --background-color-transparent-80: rgba(255,255,255,0.8);
-  --second-background-color: #fafafa;
-  --third-background-color: #f7f7f7;
-  --third-background-color-transparent: rgba(241,241,241,0.6);
-  --primary-color: #a31f34;
-  --first-text-color: #323739;
-  --second-text-color: #343a3c;
-  --third-text-color: #5c6669;
-  --fourth-text-color: #eaeced;
-  --default-text-color: #373d3f;
+  --background-color: #fcfcfc;
+  --background-color-transparent: rgba(252,252,252,0.72);
+  --background-color-transparent-15: rgba(252,252,252,0.18);
+  --background-color-transparent-40: rgba(252,252,252,0.48);
+  --background-color-transparent-80: rgba(252,252,252,0.84);
+  --second-background-color: #f7f7f7;
+  --third-background-color: #f4f4f4;
+  --third-background-color-transparent: rgba(241,241,241,0.72);
+  --primary-color: #6b6b6b;
+  --first-text-color: rgba(0,0,0,0.82);
+  --second-text-color: rgba(0,0,0,0.74);
+  --third-text-color: rgba(0,0,0,0.46);
+  --fourth-text-color: rgba(0,0,0,0.12);
+  --default-text-color: rgba(0,0,0,0.64);
   --invert-text-color: #bebec6;
-  --border-color: rgba(0,0,0,0.08);
-  --selection-color: #be243c;
-  --shadow-color-1: rgba(0,0,0,0.08);
-  --shadow-color-2: rgba(0,0,0,0.05);
-  --shadow-hover-color: rgba(0,0,0,0.28);
+  --border-color: rgba(0,0,0,0.05);
+  --selection-color: #7a7a7a;
+  --shadow-color-1: rgba(0,0,0,0.035);
+  --shadow-color-2: rgba(0,0,0,0.028);
+  --shadow-hover-color: rgba(0,0,0,0.12);
   --scrollbar-color: #c1c1c1;
   --scrollbar-color-hover: #a1a1a1;
-  --scroll-bar-bg-color: #fafafa;
-  --link-color: #323739;
+  --scroll-bar-bg-color: #f3f3f3;
+  --link-color: rgba(0,0,0,0.7);
   --copyright-info-color: #c03;
   --avatar-background-color: #06c;
   --pjax-progress-bar-color: linear-gradient(45deg, #f10006, #ef5b00, #e59c01, #19ca05, #00cab5, #0264c8, #c303c3);
@@ -36,7 +36,7 @@
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
-  --home-banner-text-color: #fff;
+  --home-banner-text-color: #f5f5f5;
   --home-banner-icons-container-border-color: rgba(255,255,255,0.35);
   --home-banner-icons-container-background-color: rgba(255,255,255,0.3);
   --redefine-box-shadow: var(--shadow-color-2) 0px 6px 24px 0px, var(--shadow-color-1) 0px 0px 0px 1px;
@@ -46,30 +46,30 @@
   --mermaid-theme: $mermaid-theme;
 }
 .light {
-  --background-color: #fff;
-  --background-color-transparent: rgba(255,255,255,0.6);
-  --background-color-transparent-15: rgba(255,255,255,0.15);
-  --background-color-transparent-40: rgba(255,255,255,0.4);
-  --background-color-transparent-80: rgba(255,255,255,0.8);
-  --second-background-color: #fafafa;
-  --third-background-color: #f7f7f7;
-  --third-background-color-transparent: rgba(241,241,241,0.6);
-  --primary-color: #a31f34;
-  --first-text-color: #323739;
-  --second-text-color: #343a3c;
-  --third-text-color: #5c6669;
-  --fourth-text-color: #eaeced;
-  --default-text-color: #373d3f;
+  --background-color: #fcfcfc;
+  --background-color-transparent: rgba(252,252,252,0.72);
+  --background-color-transparent-15: rgba(252,252,252,0.18);
+  --background-color-transparent-40: rgba(252,252,252,0.48);
+  --background-color-transparent-80: rgba(252,252,252,0.84);
+  --second-background-color: #f7f7f7;
+  --third-background-color: #f4f4f4;
+  --third-background-color-transparent: rgba(241,241,241,0.72);
+  --primary-color: #6b6b6b;
+  --first-text-color: rgba(0,0,0,0.82);
+  --second-text-color: rgba(0,0,0,0.74);
+  --third-text-color: rgba(0,0,0,0.46);
+  --fourth-text-color: rgba(0,0,0,0.12);
+  --default-text-color: rgba(0,0,0,0.64);
   --invert-text-color: #bebec6;
-  --border-color: rgba(0,0,0,0.08);
-  --selection-color: #be243c;
-  --shadow-color-1: rgba(0,0,0,0.08);
-  --shadow-color-2: rgba(0,0,0,0.05);
-  --shadow-hover-color: rgba(0,0,0,0.28);
+  --border-color: rgba(0,0,0,0.05);
+  --selection-color: #7a7a7a;
+  --shadow-color-1: rgba(0,0,0,0.035);
+  --shadow-color-2: rgba(0,0,0,0.028);
+  --shadow-hover-color: rgba(0,0,0,0.12);
   --scrollbar-color: #c1c1c1;
   --scrollbar-color-hover: #a1a1a1;
-  --scroll-bar-bg-color: #fafafa;
-  --link-color: #323739;
+  --scroll-bar-bg-color: #f3f3f3;
+  --link-color: rgba(0,0,0,0.7);
   --copyright-info-color: #c03;
   --avatar-background-color: #06c;
   --pjax-progress-bar-color: linear-gradient(45deg, #f10006, #ef5b00, #e59c01, #19ca05, #00cab5, #0264c8, #c303c3);
@@ -83,7 +83,7 @@
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
-  --home-banner-text-color: #fff;
+  --home-banner-text-color: #f5f5f5;
   --home-banner-icons-container-border-color: rgba(255,255,255,0.35);
   --home-banner-icons-container-background-color: rgba(255,255,255,0.3);
   --redefine-box-shadow: var(--shadow-color-2) 0px 6px 24px 0px, var(--shadow-color-1) 0px 0px 0px 1px;
@@ -101,22 +101,22 @@
   --second-background-color: #242529;
   --third-background-color: #292b2f;
   --third-background-color-transparent: rgba(32,33,36,0.6);
-  --primary-color: #a31f34;
-  --first-text-color: #d2d2d7;
-  --second-text-color: #cbcbd1;
-  --third-text-color: #9595a2;
-  --fourth-text-color: #36363e;
-  --default-text-color: #bebec6;
+  --primary-color: #6b6b6b;
+  --first-text-color: rgba(255,255,255,0.9);
+  --second-text-color: rgba(255,255,255,0.82);
+  --third-text-color: rgba(255,255,255,0.5);
+  --fourth-text-color: rgba(255,255,255,0.14);
+  --default-text-color: rgba(255,255,255,0.72);
   --invert-text-color: #373d3f;
   --border-color: rgba(255,255,255,0.08);
-  --selection-color: #be243c;
-  --shadow-color-1: rgba(255,255,255,0.08);
-  --shadow-color-2: rgba(255,255,255,0.05);
-  --shadow-hover-color: rgba(69,69,69,0.28);
+  --selection-color: #7a7a7a;
+  --shadow-color-1: rgba(255,255,255,0.05);
+  --shadow-color-2: rgba(255,255,255,0.03);
+  --shadow-hover-color: rgba(255,255,255,0.12);
   --scrollbar-color: #898989;
   --scrollbar-color-hover: #a1a1a1;
   --scroll-bar-bg-color: #2a2c30;
-  --link-color: #c5c5cc;
+  --link-color: rgba(255,255,255,0.72);
   --copyright-info-color: #a30029;
   --avatar-background-color: #005cb8;
   --pjax-progress-bar-color: linear-gradient(45deg, #ea404a, #ea722f, #e9a71f, #67e559, #18ecec, #1b85f1, #ee1dee);
@@ -130,7 +130,7 @@
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
-  --home-banner-text-color: #d1d1b6;
+  --home-banner-text-color: #d9d9d9;
   --home-banner-icons-container-border-color: rgba(197,197,197,0.35);
   --home-banner-icons-container-background-color: rgba(197,197,197,0.3);
   --redefine-box-shadow: var(--shadow-color-2) 0px 6px 24px 0px, var(--shadow-color-1) 0px 0px 0px 1px;
@@ -295,7 +295,7 @@ body {
   background: var(--background-color);
   font-family: Geist Variable, Noto Sans SC, -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15.5px;
   line-height: 1.5;
   scrollbar-gutter: stable;
   --navbar-height: 70px;
@@ -329,14 +329,14 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 768px) {
   html,
   body {
-    font-size: 15.36px;
+    font-size: 14.879999999999999px;
     line-height: 1.44;
   }
 }
 @media (max-width: 640px) {
   html,
   body {
-    font-size: 14.4px;
+    font-size: 13.950000000000001px;
     line-height: 1.35;
   }
 }
@@ -392,9 +392,6 @@ img[lazyload] {
     margin-bottom: 0.6rem;
   }
 }
-.btn:hover {
-  box-shadow: var(--redefine-box-shadow-hover);
-}
 @media (max-width: 768px) {
   .btn {
     padding: -4;
@@ -406,9 +403,6 @@ img[lazyload] {
     padding: -8;
     border-radius: 18px;
   }
-}
-.btn:hover {
-  box-shadow: var(--redefine-box-shadow-hover);
 }
 .btn:hover,
 .btn:focus {
