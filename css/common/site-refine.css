@@ -153,12 +153,12 @@ body {
   letter-spacing: 0.002em;
 }
 html.dark body {
-  color: #f1ece3;
-  background: #171511 !important;
-  background-image: radial-gradient(circle at 82% 8%, rgba(234,216,208,0.1), transparent 24%), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px) !important;
+  color: #1f1d19;
+  background: #f8f5ef !important;
+  background-image: radial-gradient(circle at 82% 8%, rgba(234,216,208,0.35), transparent 24%), linear-gradient(90deg, rgba(36,32,28,0.028) 1px, transparent 1px) !important;
 }
 html.dark {
-  background: #171511 !important;
+  background: #f8f5ef !important;
 }
 * {
   scrollbar-width: thin;
@@ -230,24 +230,42 @@ html.dark .progress-bar-container .swup-progress-bar {
 }
 .navbar-container .navbar-item i,
 .navbar-container .icon-item i {
-  font-size: 0.78em;
-  opacity: 0.52;
+  display: none !important;
+}
+.navbar-container .logo-image {
+  display: none !important;
+}
+.navbar-container .navbar-content {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.navbar-container .navbar-list {
+  gap: 1.1rem;
+}
+.navbar-container .navbar-item a {
+  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  text-transform: none !important;
+}
+.navbar-container .navbar-item a.active {
+  border-bottom: 1px solid rgba(31,29,25,0.28);
 }
 html.dark .navbar-container {
-  background: rgba(23,21,17,0.84) !important;
-  border-bottom-color: rgba(241,236,227,0.12) !important;
+  background: rgba(248,245,239,0.9) !important;
+  border-bottom-color: rgba(36,32,28,0.13) !important;
 }
 html.dark .navbar-container .logo-title {
-  color: #f1ece3 !important;
+  color: #1f1d19 !important;
 }
 html.dark .navbar-container .navbar-item a,
 html.dark .navbar-container .icon-item {
-  color: rgba(241,236,227,0.68) !important;
+  color: rgba(31,29,25,0.68) !important;
 }
 html.dark .navbar-container .navbar-item a:hover,
 html.dark .navbar-container .navbar-item a.active,
 html.dark .navbar-container .icon-item:hover {
-  color: #f1ece3 !important;
+  color: #1f1d19 !important;
 }
 .portfolio-home-page {
   background: #f8f5ef !important;
@@ -279,6 +297,44 @@ html.dark .navbar-container .icon-item:hover {
 html.dark .portfolio-home-page {
   color: #1f1d19;
   background: #f8f5ef !important;
+}
+.portfolio-archive-page {
+  color: #1f1d19;
+  background: #f8f5ef !important;
+  min-height: 100vh;
+}
+.portfolio-archive-page .main-content-container {
+  padding-top: 76px !important;
+}
+.portfolio-archive-page .main-content-body {
+  padding: clamp(2rem, 4vw, 3.2rem) 0 clamp(4rem, 7vw, 7rem) !important;
+}
+.portfolio-archive-page .main-content {
+  width: calc(100% - 2rem) !important;
+  max-width: 1180px !important;
+}
+.portfolio-archive-page .right-side-tools-container {
+  display: none !important;
+}
+html.dark .portfolio-archive-page {
+  color: #1f1d19;
+  background: #f8f5ef !important;
+}
+html.dark .portfolio-archive-page .navbar-container {
+  background: rgba(248,245,239,0.9) !important;
+  border-bottom-color: rgba(36,32,28,0.13) !important;
+}
+html.dark .portfolio-archive-page .navbar-container .logo-title {
+  color: #1f1d19 !important;
+}
+html.dark .portfolio-archive-page .navbar-container .navbar-item a,
+html.dark .portfolio-archive-page .navbar-container .icon-item {
+  color: rgba(31,29,25,0.68) !important;
+}
+html.dark .portfolio-archive-page .navbar-container .navbar-item a:hover,
+html.dark .portfolio-archive-page .navbar-container .navbar-item a.active,
+html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
+  color: #1f1d19 !important;
 }
 .portfolio-sidebar-shell {
   position: fixed !important;
@@ -821,6 +877,135 @@ html.dark .portfolio-home-page {
   font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 1.18rem;
   line-height: 1.85;
+}
+.portfolio-archive-page .archive-container {
+  box-sizing: border-box;
+  margin: clamp(1.2rem, 3vw, 2.4rem) auto;
+  padding: clamp(3rem, 6vw, 5.2rem) clamp(2rem, 5vw, 5rem) !important;
+  background: rgba(255,253,248,0.78) !important;
+  border: 1px solid rgba(36,32,28,0.13) !important;
+  border-radius: 0 !important;
+  box-shadow: 0 30px 90px rgba(54,45,35,0.045) !important;
+  backdrop-filter: none !important;
+}
+.portfolio-archive-page .portfolio-archive-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(280px, 0.72fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: end;
+  margin-bottom: clamp(3.2rem, 6vw, 5.5rem);
+  padding-bottom: clamp(2.4rem, 5vw, 4rem);
+  border-bottom: 1px solid rgba(36,32,28,0.13);
+}
+.portfolio-archive-page .portfolio-archive-intro .portfolio-kicker {
+  grid-column: 1/-1;
+  margin-bottom: 0.5rem;
+}
+.portfolio-archive-page .portfolio-archive-intro h1 {
+  margin: 0;
+  color: #1f1d19;
+  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-size: clamp(4.2rem, 11vw, 9rem);
+  line-height: 0.85;
+  font-weight: 500;
+  letter-spacing: -0.075em;
+}
+.portfolio-archive-page .portfolio-archive-intro p {
+  margin: 0 0 0.45rem;
+  color: rgba(31,29,25,0.68);
+  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+  line-height: 1.82;
+}
+.portfolio-archive-page .archive-list-container {
+  color: #1f1d19;
+}
+.portfolio-archive-page .archive-list-container .archive-item {
+  margin-bottom: clamp(3rem, 6vw, 5.5rem) !important;
+}
+.portfolio-archive-page .archive-list-container .archive-item-header {
+  align-items: baseline;
+  margin-bottom: 1.4rem !important;
+  padding-left: 0.2rem;
+}
+.portfolio-archive-page .archive-list-container .archive-year {
+  color: #1f1d19;
+  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-size: clamp(2.5rem, 6vw, 4.4rem) !important;
+  line-height: 1;
+  font-weight: 500 !important;
+  letter-spacing: -0.06em;
+}
+.portfolio-archive-page .archive-list-container .archive-year-post-count {
+  color: rgba(31,29,25,0.44);
+  background: transparent !important;
+  border: 1px solid rgba(36,32,28,0.13) !important;
+  border-radius: 999px !important;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.74rem !important;
+  padding: 0.14rem 0.55rem !important;
+}
+.portfolio-archive-page .archive-list-container .article-list {
+  padding-left: clamp(1.4rem, 4vw, 3rem) !important;
+}
+.portfolio-archive-page .archive-list-container .article-item {
+  border-left: 1px solid rgba(36,32,28,0.22) !important;
+  padding: clamp(2rem, 4vw, 2.8rem) 0 0.9rem clamp(2.2rem, 4vw, 3.3rem) !important;
+}
+.portfolio-archive-page .archive-list-container .article-item::before {
+  left: clamp(2.1rem, 4vw, 3.1rem);
+  top: 0.9rem;
+  color: rgba(31,29,25,0.44);
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.76rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+.portfolio-archive-page .archive-list-container .article-item::after {
+  width: 0.72rem;
+  height: 0.72rem;
+  left: -0.43rem;
+  top: 1.15rem;
+  border: 1px solid #1f1d19;
+  background: #f8f5ef;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px #f8f5ef;
+}
+.portfolio-archive-page .archive-list-container .article-title {
+  color: #1f1d19;
+  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-size: clamp(1.55rem, 3vw, 2.45rem) !important;
+  line-height: 1.18;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+.portfolio-archive-page .archive-list-container .article-title::after {
+  display: none !important;
+}
+.portfolio-archive-page .archive-list-container a:hover .article-title {
+  opacity: 0.68;
+  transform: translateX(4px);
+}
+html.dark .portfolio-archive-page .archive-container {
+  background: rgba(255,253,248,0.78) !important;
+  border-color: rgba(36,32,28,0.13) !important;
+  box-shadow: 0 30px 90px rgba(54,45,35,0.045) !important;
+}
+html.dark .portfolio-archive-page .archive-list-container .archive-year,
+html.dark .portfolio-archive-page .archive-list-container .article-title {
+  color: #1f1d19 !important;
+}
+html.dark .portfolio-archive-page .archive-list-container .archive-year-post-count,
+html.dark .portfolio-archive-page .archive-list-container .article-item::before {
+  color: rgba(31,29,25,0.44) !important;
+}
+html.dark .portfolio-archive-page .archive-list-container .article-item {
+  border-left-color: rgba(36,32,28,0.22) !important;
+}
+html.dark .portfolio-archive-page .archive-list-container .article-item::after {
+  border-color: #1f1d19 !important;
+  background: #f8f5ef !important;
 }
 .home-article-item,
 .sidebar-content,
