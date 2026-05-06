@@ -320,6 +320,29 @@ html.dark .portfolio-archive-page {
   color: #1f1d19;
   background: #f8f5ef !important;
 }
+.portfolio-secondary-page {
+  color: #1f1d19;
+  background: #f8f5ef !important;
+  min-height: 100vh;
+}
+.portfolio-secondary-page .main-content-container {
+  padding-top: 76px !important;
+}
+.portfolio-secondary-page .main-content-body {
+  padding: clamp(2rem, 4vw, 3.2rem) 0 clamp(4rem, 7vw, 7rem) !important;
+}
+.portfolio-secondary-page .main-content {
+  width: calc(100% - 2rem) !important;
+  max-width: 1180px !important;
+}
+.portfolio-secondary-page .right-side-tools-container,
+.portfolio-secondary-page .post-tools {
+  display: none !important;
+}
+html.dark .portfolio-secondary-page {
+  color: #1f1d19;
+  background: #f8f5ef !important;
+}
 html.dark .portfolio-archive-page .navbar-container {
   background: rgba(248,245,239,0.9) !important;
   border-bottom-color: rgba(36,32,28,0.13) !important;
@@ -1006,6 +1029,181 @@ html.dark .portfolio-archive-page .archive-list-container .article-item {
 html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   border-color: #1f1d19 !important;
   background: #f8f5ef !important;
+}
+.portfolio-secondary-page .page-template-container,
+.portfolio-secondary-page .post-page-container .article-content-container {
+  box-sizing: border-box;
+  margin: clamp(1.2rem, 3vw, 2.4rem) auto;
+  padding: clamp(3rem, 6vw, 5.2rem) clamp(2rem, 5vw, 5rem) !important;
+  background: rgba(255,253,248,0.78) !important;
+  border: 1px solid rgba(36,32,28,0.13) !important;
+  border-radius: 0 !important;
+  box-shadow: 0 30px 90px rgba(54,45,35,0.045) !important;
+  backdrop-filter: none !important;
+}
+.portfolio-secondary-page .page-template-content,
+.portfolio-secondary-page .article-content {
+  max-width: 820px;
+  margin: 0 auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.portfolio-secondary-page .page-template-content > h1:first-child,
+.portfolio-secondary-page .article-title-regular {
+  margin: 0 0 clamp(2.4rem, 5vw, 4rem) !important;
+  padding: 0 0 clamp(1.7rem, 4vw, 2.6rem) !important;
+  color: #1f1d19 !important;
+  border-bottom: 1px solid rgba(36,32,28,0.13);
+  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-size: clamp(4rem, 10vw, 8rem) !important;
+  line-height: 0.88 !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.075em !important;
+}
+.portfolio-secondary-page .page-template-content > h1:first-child::before,
+.portfolio-secondary-page .article-title-regular::before {
+  content: 'Notes';
+  display: block;
+  margin: 0 0 1.1rem;
+  color: rgba(31,29,25,0.68);
+  font-family: 'Segoe Print', 'Comic Sans MS', cursive;
+  font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+.portfolio-secondary-page .page-template-content > h1:first-child::after,
+.portfolio-secondary-page .article-title-regular::after {
+  content: '';
+  display: block;
+  width: 4rem;
+  height: 2px;
+  margin: 1rem 0 0;
+  background: linear-gradient(90deg, #ead8d0, transparent);
+}
+.portfolio-secondary-page .page-template-content > h1:first-child::before {
+  content: 'About';
+}
+.portfolio-secondary-page .article-title {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.portfolio-secondary-page .article-title > .w-full {
+  padding-top: 0 !important;
+  justify-content: flex-start !important;
+}
+.portfolio-secondary-page .article-header,
+.portfolio-secondary-page .article-header-meta-info {
+  max-width: 820px;
+  margin: 0 auto clamp(2.1rem, 4vw, 3.4rem) !important;
+  padding: 0 !important;
+  gap: 0 !important;
+  color: rgba(31,29,25,0.44) !important;
+  transform: none !important;
+}
+.portfolio-secondary-page .article-header .avatar,
+.portfolio-secondary-page .article-header .author-label {
+  display: none !important;
+}
+.portfolio-secondary-page .article-header .info {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.15rem;
+  align-items: center;
+}
+.portfolio-secondary-page .article-header .name {
+  color: rgba(31,29,25,0.68) !important;
+  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+}
+.portfolio-secondary-page .article-header .article-meta-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.9rem;
+  color: rgba(31,29,25,0.44) !important;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+.portfolio-secondary-page .article-header .article-meta-info .article-meta-item,
+.portfolio-secondary-page .article-header .article-meta-info span,
+.portfolio-secondary-page .article-header .article-meta-info i {
+  color: inherit !important;
+  opacity: 1 !important;
+}
+.portfolio-secondary-page .article-header .article-meta-info i,
+.portfolio-secondary-page .article-header .article-meta-info .hover-info {
+  display: none !important;
+}
+.portfolio-secondary-page .meta-info,
+.portfolio-secondary-page .meta-info a,
+.portfolio-secondary-page .article-meta-info-container,
+.portfolio-secondary-page .article-meta-info-container a {
+  color: rgba(31,29,25,0.44) !important;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace !important;
+  font-size: 0.78rem !important;
+}
+.portfolio-secondary-page .article-content {
+  border-bottom: 1px solid rgba(36,32,28,0.13) !important;
+  padding-bottom: clamp(2rem, 4vw, 3rem) !important;
+}
+.portfolio-secondary-page .post-copyright-info,
+.portfolio-secondary-page .article-nav,
+.portfolio-secondary-page .comment-container {
+  max-width: 820px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.portfolio-secondary-page .article-prev,
+.portfolio-secondary-page .article-next,
+.portfolio-secondary-page .post-copyright-info {
+  background: transparent !important;
+  border: 1px solid rgba(36,32,28,0.13) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.portfolio-secondary-page .toc-content-container {
+  display: none !important;
+}
+.portfolio-secondary-page .markdown-body p:not(.not-markdown),
+.portfolio-secondary-page .markdown-body li:not(.not-markdown) {
+  color: rgba(31,29,25,0.68);
+  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-size: clamp(1.06rem, 1.45vw, 1.22rem);
+  line-height: 1.92;
+}
+.portfolio-secondary-page .markdown-body h2:not(.not-markdown),
+.portfolio-secondary-page .markdown-body h3:not(.not-markdown) {
+  margin-top: 2.8rem;
+}
+.portfolio-secondary-page .markdown-body a:not(.not-markdown) {
+  color: #1f1d19 !important;
+  border-bottom: 1px solid rgba(31,29,25,0.24) !important;
+}
+html.dark .portfolio-secondary-page .page-template-container,
+html.dark .portfolio-secondary-page .post-page-container .article-content-container {
+  background: rgba(255,253,248,0.78) !important;
+  border-color: rgba(36,32,28,0.13) !important;
+  box-shadow: 0 30px 90px rgba(54,45,35,0.045) !important;
+}
+html.dark .portfolio-secondary-page .page-template-content > h1:first-child,
+html.dark .portfolio-secondary-page .article-title-regular,
+html.dark .portfolio-secondary-page .markdown-body h1:not(.not-markdown),
+html.dark .portfolio-secondary-page .markdown-body h2:not(.not-markdown),
+html.dark .portfolio-secondary-page .markdown-body h3:not(.not-markdown),
+html.dark .portfolio-secondary-page .markdown-body h4:not(.not-markdown),
+html.dark .portfolio-secondary-page .markdown-body h5:not(.not-markdown),
+html.dark .portfolio-secondary-page .markdown-body h6:not(.not-markdown) {
+  color: #1f1d19 !important;
+}
+html.dark .portfolio-secondary-page .markdown-body p:not(.not-markdown),
+html.dark .portfolio-secondary-page .markdown-body li:not(.not-markdown) {
+  color: rgba(31,29,25,0.68) !important;
 }
 .home-article-item,
 .sidebar-content,
