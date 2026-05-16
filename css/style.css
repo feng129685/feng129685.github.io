@@ -4799,6 +4799,64 @@ html.dark .navbar-container .navbar-item a.active,
 html.dark .navbar-container .icon-item:hover {
   color: #1f1d19 !important;
 }
+.navbar-container .navbar-drawer {
+  background: rgba(248,245,239,0.98) !important;
+  color: #1f1d19 !important;
+}
+.navbar-container .navbar-drawer .drawer-navbar-list {
+  padding-top: clamp(2.5rem, 8vh, 5rem) !important;
+  gap: 0.35rem;
+}
+.navbar-container .navbar-drawer .drawer-navbar-item a,
+.navbar-container .navbar-drawer .drawer-navbar-item-sub a,
+.navbar-container .navbar-drawer .drawer-navbar-item > div,
+.navbar-container .navbar-drawer .drawer-navbar-item-sub > div {
+  color: #1f1d19 !important;
+  border-bottom: 1px solid rgba(36,32,28,0.13) !important;
+  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.035em;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+.navbar-container .navbar-drawer .drawer-navbar-item a:hover,
+.navbar-container .navbar-drawer .drawer-navbar-item-sub a:hover,
+.navbar-container .navbar-drawer .drawer-navbar-item > div:hover,
+.navbar-container .navbar-drawer .drawer-navbar-item-sub > div:hover {
+  opacity: 0.68;
+  transform: translateX(3px);
+}
+.navbar-container .navbar-drawer .drawer-navbar-item i,
+.navbar-container .navbar-drawer .drawer-navbar-item-sub i {
+  color: rgba(31,29,25,0.44) !important;
+  font-size: 0.86rem !important;
+}
+.portfolio-drawer-note {
+  margin: 0 1.5rem 1.4rem;
+  padding: 1.15rem 0 0;
+  border-top: 1px solid rgba(36,32,28,0.13);
+  color: rgba(31,29,25,0.44);
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.95rem;
+  align-items: baseline;
+}
+.portfolio-drawer-note span {
+  color: #1f1d19 !important;
+  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: -0.12em;
+}
+.portfolio-drawer-note p {
+  margin: 0;
+  color: rgba(31,29,25,0.44) !important;
+  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+html.dark .navbar-container .navbar-drawer {
+  background: rgba(248,245,239,0.98) !important;
+}
 .portfolio-home-page {
   background: #f8f5ef !important;
   min-height: 100vh;
@@ -5730,6 +5788,52 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   color: #1f1d19 !important;
   border-bottom: 1px solid rgba(31,29,25,0.24) !important;
 }
+.portfolio-empty-state {
+  display: grid;
+  gap: 1rem;
+  max-width: 620px;
+  margin: clamp(2rem, 5vw, 4rem) auto 0;
+  padding: clamp(2rem, 5vw, 3.4rem);
+  text-align: center;
+  background: rgba(255,253,248,0.72);
+  border: 1px solid rgba(36,32,28,0.13);
+  border-radius: 18px;
+}
+.portfolio-empty-state span {
+  color: rgba(31,29,25,0.44);
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+}
+.portfolio-empty-state h2 {
+  margin: 0 !important;
+  color: #1f1d19 !important;
+  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-size: clamp(2rem, 5vw, 3.8rem) !important;
+  line-height: 0.98 !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.06em !important;
+}
+.portfolio-empty-state p {
+  max-width: 28rem;
+  margin: 0 auto !important;
+  color: rgba(31,29,25,0.68) !important;
+  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-size: 1.05rem !important;
+  line-height: 1.78 !important;
+}
+.portfolio-empty-state a {
+  width: fit-content;
+  margin: 0.35rem auto 0;
+  color: #1f1d19 !important;
+  border-bottom: 1px solid rgba(31,29,25,0.22) !important;
+  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  text-decoration: none !important;
+  transition: opacity 0.18s ease;
+}
+.portfolio-empty-state a:hover {
+  opacity: 0.68;
+}
 .write-page .right-side-tools-container {
   display: none !important;
 }
@@ -6393,8 +6497,12 @@ footer.footer.site-footer-minimal .site-copyright {
   .post-page-container .article-content-container {
     padding: 2rem 1.15rem;
   }
-  .write-studio .write-studio__grid {
+  .write-studio .write-studio__sheet {
     grid-template-columns: 1fr;
+  }
+  .write-studio .write-studio__guide {
+    border-left: 0;
+    border-top: 1px solid rgba(36,32,28,0.13);
   }
 }
 @media (max-width: 560px) {
