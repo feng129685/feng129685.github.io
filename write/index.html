@@ -187,7 +187,7 @@
 	
 </div>
 
-<main class="page-container portfolio-secondary-page" id="swup">
+<main class="page-container portfolio-secondary-page write-page" id="swup">
 
 	
 
@@ -456,46 +456,52 @@
 	
 
 	
-	<div class="write-studio">
-  <section class="write-studio__intro">
-    <p class="write-studio__eyebrow">Local draft generator</p>
+	<div class="write-studio" aria-labelledby="write-studio-title">
+  <section class="write-studio__hero">
+    <p class="write-studio__eyebrow">New note</p>
+    <h1 id="write-studio-title">Start a quiet draft.</h1>
     <p class="write-studio__lead">
-      This page keeps the public site static and lightweight, while making it easier
-      to start a new note. Drafts are generated in your browser as Hexo Markdown files.
+      A small browser-side desk for shaping a Hexo note. It keeps the public site
+      static, calm, and easy to maintain.
     </p>
   </section>
 
-  <section class="write-studio__grid" aria-label="Create a new note draft">
-    <form class="write-studio__panel" id="write-draft-form">
-      <label>
-        Title
-        <input id="write-title" name="title" type="text" placeholder="A quiet note" autocomplete="off" required>
-      </label>
-      <label>
-        Body
-        <textarea id="write-body" name="body" placeholder="Start with one honest paragraph."></textarea>
-      </label>
+  <section class="write-studio__sheet" aria-label="Create a new note draft">
+    <form class="write-studio__form" id="write-draft-form">
+      <div class="write-studio__field write-studio__field--title">
+        <label for="write-title">Title</label>
+        <input id="write-title" name="title" type="text" placeholder="A quiet note…" autocomplete="off" required>
+        <p class="write-studio__hint">This becomes the Markdown front-matter title.</p>
+      </div>
+
+      <div class="write-studio__field write-studio__field--body">
+        <label for="write-body">Body</label>
+        <textarea id="write-body" name="body" placeholder="Start with one honest paragraph…"></textarea>
+        <p class="write-studio__hint">You can keep it rough. The downloaded file is only a draft.</p>
+      </div>
+
       <div class="write-studio__actions">
-        <button type="submit">Download draft</button>
-        <a class="write-studio__ghost-link" href="/archives/">Back to notes</a>
+        <button class="write-studio__primary" type="submit">Download draft</button>
+        <a class="write-studio__secondary" href="/archives/">Back to notes</a>
       </div>
       <p class="write-studio__status" id="write-status" aria-live="polite"></p>
     </form>
 
-    <aside class="write-studio__aside">
-      <h2>A small doorway, not a heavy CMS.</h2>
+    <aside class="write-studio__guide">
+      <span class="write-studio__guide-mark" aria-hidden="true">f.</span>
+      <h2>Static first. Publish when ready.</h2>
       <p>
-        For now this is intentionally simple: write, download, place the file in
-        <code>source/_posts</code>, then generate and deploy the site.
+        Download the draft, place it in <code translate="no">source/_posts</code>, then rebuild and deploy.
+        This keeps the site light while still giving you a clean doorway for writing.
       </p>
-      <ul>
-        <li>No database.</li>
-        <li>No login surface.</li>
-        <li>No extra server process.</li>
-      </ul>
-      <code class="write-studio__code">hexo clean
+      <ol>
+        <li>Draft in this page.</li>
+        <li>Move the file into the posts folder.</li>
+        <li>Generate and deploy the site.</li>
+      </ol>
+      <pre class="write-studio__code"><code translate="no">hexo clean
 hexo generate
-hexo deploy</code>
+hexo deploy</code></pre>
     </aside>
   </section>
 </div>
@@ -506,6 +512,7 @@ hexo deploy</code>
   const titleInput = document.getElementById('write-title');
   const bodyInput = document.getElementById('write-body');
   const status = document.getElementById('write-status');
+  let draftDownloaded = false;
 
   if (!form || !titleInput || !bodyInput) return;
 
@@ -554,7 +561,17 @@ hexo deploy</code>
     link.click();
     link.remove();
     URL.revokeObjectURL(link.href);
+    draftDownloaded = true;
     status.textContent = 'Draft downloaded. Move it into source/_posts when you are ready.';
+  });
+
+  window.addEventListener('beforeunload', function (event) {
+    const hasDraft = titleInput.value.trim() || bodyInput.value.trim();
+
+    if (hasDraft && !draftDownloaded) {
+      event.preventDefault();
+      event.returnValue = '';
+    }
   });
 }());
 </script>
