@@ -5834,6 +5834,10 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
 .portfolio-empty-state a:hover {
   opacity: 0.68;
 }
+.post-copyright-info,
+.article-copyright-info-container {
+  display: none !important;
+}
 .write-page .right-side-tools-container {
   display: none !important;
 }
