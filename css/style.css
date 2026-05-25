@@ -4685,12 +4685,12 @@ body {
   letter-spacing: 0.002em;
 }
 html.dark body {
-  color: #1f1d19;
-  background: #f8f5ef !important;
-  background-image: radial-gradient(circle at 82% 8%, rgba(234,216,208,0.35), transparent 24%), linear-gradient(90deg, rgba(36,32,28,0.028) 1px, transparent 1px) !important;
+  color: rgba(248,245,239,0.86);
+  background: #171511 !important;
+  background-image: radial-gradient(circle at 82% 8%, rgba(255,253,248,0.08), transparent 24%), linear-gradient(90deg, rgba(255,253,248,0.018) 1px, transparent 1px) !important;
 }
 html.dark {
-  background: #f8f5ef !important;
+  background: #171511 !important;
 }
 * {
   scrollbar-width: thin;
@@ -5933,8 +5933,8 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   overflow: hidden;
   background: rgba(255,253,248,0.86);
   border: 1px solid rgba(36,32,28,0.13);
-  border-radius: 0;
-  box-shadow: 0 34px 100px rgba(54,45,35,0.07);
+  border-radius: 28px;
+  box-shadow: 0 34px 100px rgba(54,45,35,0.055);
 }
 .write-studio__sheet::before {
   content: '';
@@ -5943,7 +5943,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   pointer-events: none;
   background: linear-gradient(90deg, transparent calc(100% - 1px), rgba(36,32,28,0.035) calc(100% - 1px)), linear-gradient(rgba(36,32,28,0.026) 1px, transparent 1px);
   background-size: 42px 42px;
-  opacity: 0.4;
+  opacity: 0.22;
 }
 .write-studio__form,
 .write-studio__guide {
@@ -5978,7 +5978,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   color: #1f1d19 !important;
   background: rgba(248,245,239,0.92) !important;
   border: 1px solid rgba(36,32,28,0.16) !important;
-  border-radius: 0 !important;
+  border-radius: 14px !important;
   outline: none !important;
   box-shadow: none !important;
   font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
@@ -6055,6 +6055,16 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   background: #1f1d19 !important;
   border: 1px solid #1f1d19 !important;
 }
+.write-studio__primary:disabled {
+  cursor: wait;
+  opacity: 0.46;
+  transform: none !important;
+}
+.write-studio__publish {
+  color: #f8f5ef !important;
+  background: #1f1d19 !important;
+  border: 1px solid #1f1d19 !important;
+}
 .write-studio__secondary {
   color: #1f1d19 !important;
   background: rgba(255,253,248,0.42) !important;
@@ -6067,6 +6077,12 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace !important;
   font-size: 0.76rem !important;
   letter-spacing: 0.02em !important;
+}
+.write-studio__status.is-success {
+  color: rgba(42,92,58,0.86) !important;
+}
+.write-studio__status.is-error {
+  color: rgba(126,40,36,0.86) !important;
 }
 .write-studio__guide {
   display: flex;
@@ -6161,12 +6177,58 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   padding: 0 !important;
 }
 html.dark .write-page {
-  color: #1f1d19;
-  background: #f8f5ef !important;
+  color: rgba(248,245,239,0.88);
+  background: #171511 !important;
 }
 html.dark .write-page .write-studio__sheet,
 html.dark .write-page .write-studio__guide {
-  background: rgba(255,253,248,0.86);
+  background: rgba(255,253,248,0.08);
+  border-color: rgba(255,253,248,0.14);
+  box-shadow: 0 30px 90px rgba(0,0,0,0.24);
+  backdrop-filter: blur(14px) saturate(120%);
+}
+html.dark .write-page .write-studio__eyebrow,
+html.dark .write-page .write-studio__hero h1,
+html.dark .write-page .write-studio__guide h2,
+html.dark .write-page .write-studio__guide-mark,
+html.dark .write-page .write-studio__field label {
+  color: rgba(255,253,248,0.92) !important;
+}
+html.dark .write-page .write-studio__lead,
+html.dark .write-page .write-studio__hint,
+html.dark .write-page .write-studio__guide p,
+html.dark .write-page .write-studio__guide li,
+html.dark .write-page .write-studio__status {
+  color: rgba(255,253,248,0.58) !important;
+}
+html.dark .write-page .write-studio__field input,
+html.dark .write-page .write-studio__field textarea {
+  color: rgba(255,253,248,0.9) !important;
+  background: rgba(255,253,248,0.07) !important;
+  border-color: rgba(255,253,248,0.16) !important;
+}
+html.dark .write-page .write-studio__field input::placeholder,
+html.dark .write-page .write-studio__field textarea::placeholder {
+  color: rgba(255,253,248,0.32) !important;
+}
+html.dark .write-page .write-studio__field input:focus,
+html.dark .write-page .write-studio__field textarea:focus {
+  background: rgba(255,253,248,0.1) !important;
+  border-color: rgba(255,253,248,0.42) !important;
+}
+html.dark .write-page .write-studio__primary,
+html.dark .write-page .write-studio__publish {
+  color: #171511 !important;
+  background: rgba(255,253,248,0.9) !important;
+  border-color: rgba(255,253,248,0.9) !important;
+}
+html.dark .write-page .write-studio__secondary {
+  color: rgba(255,253,248,0.86) !important;
+  background: rgba(255,253,248,0.04) !important;
+  border-color: rgba(255,253,248,0.18) !important;
+}
+html.dark .write-page .write-studio__code {
+  background: rgba(0,0,0,0.34) !important;
 }
 html.dark .portfolio-secondary-page .page-template-container,
 html.dark .portfolio-secondary-page .post-page-container .article-content-container {
