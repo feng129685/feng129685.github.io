@@ -252,20 +252,20 @@ html.dark .progress-bar-container .swup-progress-bar {
   border-bottom: 1px solid rgba(31,29,25,0.28);
 }
 html.dark .navbar-container {
-  background: rgba(248,245,239,0.9) !important;
-  border-bottom-color: rgba(36,32,28,0.13) !important;
+  background: rgba(23,21,17,0.82) !important;
+  border-bottom-color: rgba(255,253,248,0.1) !important;
 }
 html.dark .navbar-container .logo-title {
-  color: #1f1d19 !important;
+  color: rgba(255,253,248,0.92) !important;
 }
 html.dark .navbar-container .navbar-item a,
 html.dark .navbar-container .icon-item {
-  color: rgba(31,29,25,0.68) !important;
+  color: rgba(255,253,248,0.62) !important;
 }
 html.dark .navbar-container .navbar-item a:hover,
 html.dark .navbar-container .navbar-item a.active,
 html.dark .navbar-container .icon-item:hover {
-  color: #1f1d19 !important;
+  color: rgba(255,253,248,0.94) !important;
 }
 .navbar-container .navbar-drawer {
   background: rgba(248,245,239,0.98) !important;
@@ -323,7 +323,18 @@ html.dark .navbar-container .icon-item:hover {
   line-height: 1.55;
 }
 html.dark .navbar-container .navbar-drawer {
-  background: rgba(248,245,239,0.98) !important;
+  background: rgba(23,21,17,0.98) !important;
+}
+html.dark .navbar-container .navbar-drawer .drawer-navbar-item a,
+html.dark .navbar-container .navbar-drawer .drawer-navbar-item-sub a,
+html.dark .navbar-container .navbar-drawer .drawer-navbar-item > div,
+html.dark .navbar-container .navbar-drawer .drawer-navbar-item-sub > div {
+  color: rgba(255,253,248,0.88) !important;
+  border-bottom-color: rgba(255,253,248,0.12) !important;
+}
+html.dark .navbar-container .navbar-drawer .drawer-navbar-item i,
+html.dark .navbar-container .navbar-drawer .drawer-navbar-item-sub i {
+  color: rgba(255,253,248,0.46) !important;
 }
 .portfolio-home-page {
   background: #f8f5ef !important;
@@ -378,6 +389,62 @@ html.dark .portfolio-archive-page {
   color: rgba(255,253,248,0.88);
   background: #171511 !important;
 }
+html.dark .portfolio-home-page .portfolio-sidebar-shell {
+  background: rgba(23,21,17,0.82);
+  border-right-color: rgba(255,253,248,0.1);
+}
+html.dark .portfolio-home-page .portfolio-mark,
+html.dark .portfolio-home-page .portfolio-nav a,
+html.dark .portfolio-home-page .portfolio-socials a {
+  color: rgba(255,253,248,0.9) !important;
+}
+html.dark .portfolio-home-page .portfolio-nav a::after {
+  background: rgba(255,253,248,0.18);
+}
+html.dark .portfolio-home-page .portfolio-sidebar-footer p {
+  color: rgba(255,253,248,0.46);
+}
+html.dark .portfolio-home-page .portfolio-section {
+  border-bottom-color: rgba(255,253,248,0.1);
+}
+html.dark .portfolio-home-page .portfolio-kicker,
+html.dark .portfolio-home-page .portfolio-hero h1,
+html.dark .portfolio-home-page .portfolio-statement,
+html.dark .portfolio-home-page .portfolio-section-heading h2,
+html.dark .portfolio-home-page .portfolio-values h3,
+html.dark .portfolio-home-page .portfolio-note-card h3 a,
+html.dark .portfolio-home-page .portfolio-note-index,
+html.dark .portfolio-home-page .portfolio-project-grid h3,
+html.dark .portfolio-home-page .portfolio-timeline h3,
+html.dark .portfolio-home-page .portfolio-contact h2,
+html.dark .portfolio-home-page .portfolio-text-link {
+  color: rgba(255,253,248,0.92) !important;
+}
+html.dark .portfolio-home-page .portfolio-summary,
+html.dark .portfolio-home-page .portfolio-about-body,
+html.dark .portfolio-home-page .portfolio-note-card p,
+html.dark .portfolio-home-page .portfolio-project-grid p,
+html.dark .portfolio-home-page .portfolio-timeline p,
+html.dark .portfolio-home-page .portfolio-contact p {
+  color: rgba(255,253,248,0.62) !important;
+}
+html.dark .portfolio-home-page .portfolio-values,
+html.dark .portfolio-home-page .portfolio-note-list,
+html.dark .portfolio-home-page .portfolio-note-card,
+html.dark .portfolio-home-page .portfolio-timeline {
+  border-color: rgba(255,253,248,0.12) !important;
+}
+html.dark .portfolio-home-page .portfolio-glyph {
+  color: rgba(255,253,248,0.88);
+  background: rgba(255,253,248,0.06);
+}
+html.dark .portfolio-home-page .portfolio-project-sketch {
+  opacity: 0.62;
+}
+html.dark .portfolio-home-page .portfolio-project-sketch::before,
+html.dark .portfolio-home-page .portfolio-project-sketch::after {
+  border-color: rgba(255,253,248,0.56);
+}
 .portfolio-secondary-page {
   color: #1f1d19;
   background: #f8f5ef !important;
@@ -398,8 +465,8 @@ html.dark .portfolio-archive-page {
   display: none !important;
 }
 html.dark .portfolio-secondary-page {
-  color: #1f1d19;
-  background: #f8f5ef !important;
+  color: rgba(255,253,248,0.88);
+  background: #171511 !important;
 }
 html.dark .portfolio-archive-page .navbar-container {
   background: rgba(23,21,17,0.82) !important;
@@ -426,9 +493,9 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   height: 100vh;
   min-height: 1000px;
   margin: 0 !important;
-  background: rgba(252,250,245,0.9);
+  background: rgba(252,250,245,0.84);
   border-right: 1px solid rgba(36,32,28,0.13);
-  box-shadow: 18px 0 48px rgba(54,45,35,0.025);
+  box-shadow: none;
 }
 .portfolio-sidebar {
   box-sizing: border-box;
@@ -471,8 +538,8 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   position: relative;
   text-decoration: none;
   font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
-  font-size: 1.55rem;
-  line-height: 1.05;
+  font-size: 1.28rem;
+  line-height: 1.15;
   font-weight: 400;
   letter-spacing: -0.025em;
   transition: opacity 0.18s ease, transform 0.18s ease;
@@ -482,10 +549,10 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   position: absolute;
   left: 0;
   bottom: -0.42rem;
-  width: 4.8rem;
-  height: 2px;
-  background: linear-gradient(90deg, rgba(234,216,208,0.95), transparent);
-  transform: scaleX(0.36);
+  width: 2.4rem;
+  height: 1px;
+  background: rgba(31,29,25,0.22);
+  transform: scaleX(0.48);
   transform-origin: left;
   transition: transform 0.22s ease, opacity 0.22s ease;
 }
@@ -554,7 +621,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   overflow: hidden;
 }
 .portfolio-hero {
-  min-height: 1000px;
+  min-height: 860px;
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(340px, 1fr);
   align-items: center;
@@ -562,14 +629,14 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   padding-top: clamp(4.5rem, 7vw, 6.8rem);
 }
 .portfolio-hero::after {
-  content: 'Scroll';
+  content: '';
   position: absolute;
   right: 4.8rem;
   bottom: 2.6rem;
   color: rgba(31,29,25,0.44);
-  font-family: 'Segoe Print', 'Comic Sans MS', cursive;
-  font-size: 1rem;
-  writing-mode: vertical-rl;
+  width: 1px;
+  height: 4.6rem;
+  background: rgba(31,29,25,0.18);
 }
 .portfolio-hero-copy {
   max-width: 690px;
@@ -579,8 +646,10 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   position: relative;
   margin: 0 0 1.4rem;
   color: #1f1d19;
-  font-family: 'Segoe Print', 'Comic Sans MS', cursive;
-  font-size: clamp(1.15rem, 1.6vw, 1.55rem);
+  font-family: 'Geist', 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif;
+  font-size: clamp(0.78rem, 1.1vw, 0.92rem);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   line-height: 1;
 }
 .portfolio-kicker::after {
@@ -588,36 +657,36 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   position: absolute;
   left: 0;
   bottom: -0.55rem;
-  width: 4.3rem;
-  height: 2px;
-  background: linear-gradient(90deg, #ead8d0, transparent);
+  width: 2.2rem;
+  height: 1px;
+  background: rgba(31,29,25,0.18);
 }
 .portfolio-hero h1 {
   margin: 0;
   color: #1f1d19;
   font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
-  font-size: clamp(5rem, 12vw, 10.6rem);
-  line-height: 0.84;
+  font-size: clamp(4.6rem, 10vw, 8.8rem);
+  line-height: 0.88;
   font-weight: 500;
   letter-spacing: -0.075em;
 }
 .portfolio-statement {
   display: inline-block;
-  margin: 2.2rem 0 0;
+  margin: 2rem 0 0;
   color: #1f1d19;
-  font-family: 'Segoe Print', 'Comic Sans MS', cursive;
-  font-size: clamp(1.8rem, 3.6vw, 3.2rem);
-  line-height: 1.2;
-  letter-spacing: 0.12em;
-  border-bottom: 2px solid rgba(31,29,25,0.7);
-  transform: rotate(-1deg);
+  font-family: 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.72rem);
+  line-height: 1.45;
+  letter-spacing: -0.015em;
+  border-bottom: 1px solid rgba(31,29,25,0.16);
+  transform: none;
 }
 .portfolio-summary {
   max-width: 38rem;
   margin: 2.7rem 0 2.6rem;
   color: rgba(31,29,25,0.68);
   font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
-  font-size: clamp(1.25rem, 2vw, 1.72rem);
+  font-size: clamp(1.05rem, 1.55vw, 1.32rem);
   line-height: 1.8;
 }
 .portfolio-text-link {
@@ -660,21 +729,23 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 }
 .portfolio-hero-art img {
   display: block;
-  width: 47vw;
+  width: 40vw;
   max-width: 100%;
   height: auto;
   mix-blend-mode: multiply;
   filter: saturate(0.82) contrast(0.96);
-  opacity: 0.94;
+  opacity: 0.58;
 }
 .portfolio-hero-art figcaption {
-  margin: -2.2rem 0 0 auto;
+  margin: 1.2rem 0 0 auto;
   max-width: 16rem;
   color: rgba(31,29,25,0.44);
-  font-family: 'Segoe Print', 'Comic Sans MS', cursive;
-  font-size: 1.3rem;
+  font-family: 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif;
+  font-size: 0.84rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   line-height: 1.35;
-  transform: rotate(-2deg);
+  transform: none;
 }
 .portfolio-section-heading {
   max-width: 760px;
@@ -1138,7 +1209,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   display: block;
   margin: 0 0 1.1rem;
   color: rgba(31,29,25,0.68);
-  font-family: 'Segoe Print', 'Comic Sans MS', cursive;
+  font-family: 'Geist', 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif;
   font-size: clamp(1.15rem, 1.8vw, 1.45rem);
   line-height: 1;
   letter-spacing: 0;
@@ -1373,7 +1444,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   position: relative;
   margin: 0 0 1.1rem !important;
   color: #1f1d19 !important;
-  font-family: 'Segoe Print', 'Comic Sans MS', cursive !important;
+  font-family: 'Geist', 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif !important;
   font-size: clamp(1.12rem, 1.6vw, 1.45rem) !important;
   line-height: 1 !important;
 }
@@ -1645,6 +1716,26 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   border: 0 !important;
   padding: 0 !important;
 }
+.write-studio__receipt {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 0 !important;
+}
+.write-studio__receipt span {
+  display: inline-flex;
+  min-height: 2.7rem;
+  align-items: center;
+  justify-content: center;
+  color: rgba(31,29,25,0.68);
+  background: rgba(255,253,248,0.54);
+  border: 1px solid rgba(36,32,28,0.13);
+  border-radius: 999px;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
 html.dark .write-page {
   color: rgba(248,245,239,0.88);
   background: #171511 !important;
@@ -1698,6 +1789,11 @@ html.dark .write-page .write-studio__secondary {
 }
 html.dark .write-page .write-studio__code {
   background: rgba(0,0,0,0.34) !important;
+}
+html.dark .write-page .write-studio__receipt span {
+  color: rgba(255,253,248,0.62);
+  background: rgba(255,253,248,0.04);
+  border-color: rgba(255,253,248,0.14);
 }
 html.dark .portfolio-secondary-page .page-template-container,
 html.dark .portfolio-secondary-page .post-page-container .article-content-container {
