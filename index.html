@@ -450,10 +450,9 @@
 
         <nav class="portfolio-nav" aria-label="Home sections">
             <a href="#home">Home</a>
+            <a href="#projects">Branches</a>
             <a href="#notes">Notes</a>
-            <a href="/projects/">Projects</a>
             <a href="#about">About</a>
-            <a href="#process">Process</a>
             <a href="#contact">Contact</a>
         </nav>
 
@@ -482,92 +481,107 @@
 			<div class="main-content">
 				
 
-<div class="home-content-container portfolio-home" id="home">
-    <section class="portfolio-section portfolio-hero" aria-labelledby="portfolio-title">
-        <div class="portfolio-hero-copy">
-            <p class="portfolio-kicker">feng network</p>
-            <h1 id="portfolio-title">feng</h1>
-            <p class="portfolio-statement">Notes, tools, and small experiments.</p>
-            <p class="portfolio-summary">
-                A quiet personal network for writing, building, and collecting small web tools.
-                It keeps the public surface calm while the projects underneath keep evolving.
+<div class="home-content-container portfolio-home tree-home" id="home">
+    <section class="tree-hero" aria-labelledby="tree-title">
+        <div class="tree-hero__copy">
+            <p class="tree-eyebrow">feng's tree / personal network</p>
+            <h1 id="tree-title">feng's quiet workspace.</h1>
+            <p class="tree-lead">
+                A calm front room for notes, small tools, and experiments that stay useful.
+                Light on the surface, considered underneath.
             </p>
-            <div class="portfolio-hero-actions">
-                <a class="portfolio-text-link" href="/projects/">Explore the network <span aria-hidden="true">&rarr;</span></a>
-                <a class="portfolio-text-link portfolio-text-link-muted" href="#notes">Read notes <span aria-hidden="true">&darr;</span></a>
+            <div class="tree-actions">
+                <a class="tree-button tree-button--primary" href="#projects">Explore branches</a>
+                <a class="tree-button tree-button--ghost" href="#notes">Recent writing</a>
             </div>
         </div>
 
-        <figure class="portfolio-hero-art portfolio-network-orbit" aria-label="Abstract map of feng network">
-            <div class="portfolio-orbit-card portfolio-orbit-card-main">
-                <span>f.</span>
-                <p>personal hub</p>
+        <aside class="tree-console" aria-label="Network snapshot">
+            <div class="tree-console__bar" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="portfolio-orbit-node portfolio-orbit-node-api">api</div>
-            <div class="portfolio-orbit-node portfolio-orbit-node-bead">bead</div>
-            <div class="portfolio-orbit-node portfolio-orbit-node-agent">agent</div>
-            <figcaption>Three small tools, one quiet home base.</figcaption>
-        </figure>
+            <div class="tree-console__body">
+                <p><span>root</span> feng.xx.kg</p>
+                <p><span>branch</span> api / bead / agent</p>
+                <p><span>mode</span> quiet, useful, personal</p>
+            </div>
+            <div class="tree-map" aria-hidden="true">
+                <span class="tree-map__core">f.</span>
+                <span class="tree-map__line tree-map__line--one"></span>
+                <span class="tree-map__line tree-map__line--two"></span>
+                <span class="tree-map__line tree-map__line--three"></span>
+                <span class="tree-map__node tree-map__node--api">api</span>
+                <span class="tree-map__node tree-map__node--bead">bead</span>
+                <span class="tree-map__node tree-map__node--agent">agent</span>
+            </div>
+        </aside>
     </section>
 
-    <section class="portfolio-section portfolio-about" id="about" aria-labelledby="about-title">
-        <div class="portfolio-section-heading">
-            <p class="portfolio-kicker">About</p>
-            <h2 id="about-title">A warm desk on the web for ideas, tools, and careful making.</h2>
+    <section class="tree-section tree-branches" id="projects" aria-labelledby="branches-title">
+        <div class="tree-section__head">
+            <p class="tree-eyebrow">Branches</p>
+            <h2 id="branches-title">Three projects from the same root.</h2>
+            <a href="/projects/" class="tree-inline-link">Open project index <span aria-hidden="true">&rarr;</span></a>
         </div>
-        <div class="portfolio-about-body">
-            <p>
-                This site is the front room of my small web system. It collects notes,
-                experiments, tool entrances, and the quiet trace of things being shaped over time.
-                I prefer interfaces that feel calm, useful, and human enough to return to.
-            </p>
-            <a class="portfolio-text-link" href="/about/">More about me <span aria-hidden="true">&rarr;</span></a>
-        </div>
-        <div class="portfolio-values" aria-label="Network principles">
-            <article>
-                <span class="portfolio-glyph">01</span>
-                <h3>Notes</h3>
-                <p>Small records that keep thoughts from disappearing too quickly.</p>
-            </article>
-            <article>
-                <span class="portfolio-glyph">02</span>
-                <h3>Tools</h3>
-                <p>Useful interfaces that reduce friction or make a process clearer.</p>
-            </article>
-            <article>
-                <span class="portfolio-glyph">03</span>
-                <h3>Craft</h3>
-                <p>Visual experiments and gentle systems for making things by hand.</p>
-            </article>
-            <article>
-                <span class="portfolio-glyph">04</span>
-                <h3>Lab</h3>
-                <p>Guided practice spaces for thinking, reviewing, and improving slowly.</p>
-            </article>
+
+        <div class="tree-branch-grid">
+            
+                <article class="tree-branch tree-branch--api">
+                    <a href="https://api.feng.xx.kg/" target="_blank" rel="noopener" aria-label="Open API Gateway">
+                        <span class="tree-branch__number">01</span>
+                        <span class="tree-branch__label">route</span>
+                        <h3>API Gateway</h3>
+                        <p>A private gateway for model access, routing, and small service experiments.</p>
+                        <span class="tree-branch__host">api.feng.xx.kg <span aria-hidden="true">&rarr;</span></span>
+                    </a>
+                </article>
+            
+                <article class="tree-branch tree-branch--bead">
+                    <a href="https://bead.feng.xx.kg/" target="_blank" rel="noopener" aria-label="Open BeadForge">
+                        <span class="tree-branch__number">02</span>
+                        <span class="tree-branch__label">craft</span>
+                        <h3>BeadForge</h3>
+                        <p>A visual tool for turning images into bead patterns, color maps, and making steps.</p>
+                        <span class="tree-branch__host">bead.feng.xx.kg <span aria-hidden="true">&rarr;</span></span>
+                    </a>
+                </article>
+            
+                <article class="tree-branch tree-branch--agent">
+                    <a href="https://agent.feng.xx.kg/" target="_blank" rel="noopener" aria-label="Open Agent Lab">
+                        <span class="tree-branch__number">03</span>
+                        <span class="tree-branch__label">agent</span>
+                        <h3>Agent Lab</h3>
+                        <p>A focused interface for guided thinking, review loops, and quiet interactive sessions.</p>
+                        <span class="tree-branch__host">agent.feng.xx.kg <span aria-hidden="true">&rarr;</span></span>
+                    </a>
+                </article>
+            
         </div>
     </section>
 
-    <section class="portfolio-section portfolio-notes" id="notes" aria-labelledby="notes-title">
-        <div class="portfolio-section-heading portfolio-section-heading-row">
+    <section class="tree-section tree-notes" id="notes" aria-labelledby="notes-title">
+        <div class="tree-section__head tree-section__head--row">
             <div>
-                <p class="portfolio-kicker">Notes</p>
+                <p class="tree-eyebrow">Notebook</p>
                 <h2 id="notes-title">Recent writing</h2>
             </div>
-            <div class="portfolio-note-actions">
-                <a class="portfolio-text-link" href="/archives/">View all notes <span aria-hidden="true">&rarr;</span></a>
-                <a class="portfolio-text-link portfolio-admin-link" href="/write/">New note <span aria-hidden="true">&rarr;</span></a>
+            <div class="tree-section__actions">
+                <a href="/archives/" class="tree-inline-link">All notes <span aria-hidden="true">&rarr;</span></a>
+                <a href="/write/" class="tree-inline-link tree-inline-link--muted">New note <span aria-hidden="true">&rarr;</span></a>
             </div>
         </div>
 
-        <div class="portfolio-note-list">
+        <div class="tree-note-list">
             
                 
-                    <article class="portfolio-note-card">
-                        <span class="portfolio-note-index">01</span>
+                    <article class="tree-note">
+                        <span class="tree-note__index">01</span>
                         <div>
                             <h3><a href="/2026/05/16/hello-world/">First Note</a></h3>
                             <p>This is the first note in the archive.
-I want this site to feel less like a loud profile and ...</p>
+I want this site to feel less like a loud profile and more like a room...</p>
                         </div>
                         <time datetime="2026-05-16T10:00:00.000Z">2026-05-16</time>
                     </article>
@@ -576,94 +590,40 @@ I want this site to feel less like a loud profile and ...</p>
         </div>
     </section>
 
-    <section class="portfolio-section portfolio-projects portfolio-network" id="projects" aria-labelledby="projects-title">
-        <div class="portfolio-section-heading portfolio-section-heading-row">
-            <div>
-                <p class="portfolio-kicker">Projects</p>
-                <h2 id="projects-title">The small network</h2>
-            </div>
-            <a class="portfolio-text-link" href="/projects/">View project index <span aria-hidden="true">&rarr;</span></a>
+    <section class="tree-section tree-about" id="about" aria-labelledby="about-title">
+        <div class="tree-about__card">
+            <p class="tree-eyebrow">About</p>
+            <h2 id="about-title">A personal site with room to breathe.</h2>
+            <p>
+                I use this space as a calm front room for public work: notes, useful tools,
+                experiments, and small traces of things being shaped over time.
+            </p>
+            <a href="/about/" class="tree-inline-link">Read about <span aria-hidden="true">&rarr;</span></a>
         </div>
-
-        <div class="portfolio-network-grid">
-            
-                <article class="portfolio-network-card portfolio-network-card-api">
-                    <a href="https://api.feng.xx.kg/" target="_blank" rel="noopener" aria-label="Open API Gateway">
-                        <span class="portfolio-network-label">infrastructure</span>
-                        <div class="portfolio-network-mark" aria-hidden="true">api</div>
-                        <h3>API Gateway</h3>
-                        <p>A private gateway for model access, routing, and keeping small AI workflows connected.</p>
-                        <div class="portfolio-network-meta">
-                            <span>api.feng.xx.kg</span>
-                            <span aria-hidden="true">&rarr;</span>
-                        </div>
-                    </a>
-                </article>
-            
-                <article class="portfolio-network-card portfolio-network-card-bead">
-                    <a href="https://bead.feng.xx.kg/" target="_blank" rel="noopener" aria-label="Open BeadForge">
-                        <span class="portfolio-network-label">creative tool</span>
-                        <div class="portfolio-network-mark" aria-hidden="true">bead</div>
-                        <h3>BeadForge</h3>
-                        <p>A visual guide for turning images into bead patterns, color maps, and making steps.</p>
-                        <div class="portfolio-network-meta">
-                            <span>bead.feng.xx.kg</span>
-                            <span aria-hidden="true">&rarr;</span>
-                        </div>
-                    </a>
-                </article>
-            
-                <article class="portfolio-network-card portfolio-network-card-agent">
-                    <a href="https://agent.feng.xx.kg/" target="_blank" rel="noopener" aria-label="Open Agent Lab">
-                        <span class="portfolio-network-label">agent space</span>
-                        <div class="portfolio-network-mark" aria-hidden="true">lab</div>
-                        <h3>Agent Lab</h3>
-                        <p>A focused interface for guided thinking, review loops, and quieter interactive sessions.</p>
-                        <div class="portfolio-network-meta">
-                            <span>agent.feng.xx.kg</span>
-                            <span aria-hidden="true">&rarr;</span>
-                        </div>
-                    </a>
-                </article>
-            
-        </div>
-    </section>
-
-    <section class="portfolio-section portfolio-learning" id="process" aria-labelledby="process-title">
-        <div class="portfolio-section-heading">
-            <p class="portfolio-kicker">Process</p>
-            <h2 id="process-title">A slow loop of noticing, shaping, and returning.</h2>
-        </div>
-        <div class="portfolio-timeline">
+        <div class="tree-about__meta">
             <article>
                 <span>01</span>
-                <h3>Observe</h3>
-                <p>Notice friction, habits, and small moments where a tool or note could help.</p>
+                <h3>Write</h3>
+                <p>Keep useful observations visible.</p>
             </article>
             <article>
                 <span>02</span>
-                <h3>Shape</h3>
-                <p>Turn the useful part into a quiet interface, a short record, or a working prototype.</p>
+                <h3>Build</h3>
+                <p>Turn rough ideas into small working systems.</p>
             </article>
             <article>
                 <span>03</span>
-                <h3>Return</h3>
-                <p>Keep what still feels useful, simplify what grew noisy, and let the network mature slowly.</p>
+                <h3>Refine</h3>
+                <p>Return later, remove noise, keep the good parts.</p>
             </article>
         </div>
     </section>
 
-    <section class="portfolio-section portfolio-contact" id="contact" aria-labelledby="contact-title">
-        <div>
-            <p class="portfolio-kicker">Contact</p>
-            <h2 id="contact-title">Small things, kept online.</h2>
-            <p>
-                The network will keep growing through notes, tools, and experiments.
-                GitHub is the best place to find the public trace of the work.
-            </p>
-        </div>
-        <a class="portfolio-text-link" href="https://github.com/feng129685" target="_blank" rel="noopener">
-            Visit GitHub <span aria-hidden="true">&rarr;</span>
+    <section class="tree-section tree-contact" id="contact" aria-labelledby="contact-title">
+        <p class="tree-eyebrow">Contact</p>
+        <h2 id="contact-title">The public trace lives on GitHub.</h2>
+        <a class="tree-button tree-button--primary" href="https://github.com/feng129685" target="_blank" rel="noopener">
+            Visit GitHub
         </a>
     </section>
 </div>
