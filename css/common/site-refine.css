@@ -141,15 +141,15 @@
 }
 html {
   scroll-behavior: smooth;
-  background: #f8f5ef !important;
+  background: #fbf7ef !important;
 }
 body {
   min-height: 100vh;
   color: #1f1d19;
-  background: #f8f5ef !important;
-  background-image: radial-gradient(circle at 82% 8%, rgba(234,216,208,0.35), transparent 24%), linear-gradient(90deg, rgba(36,32,28,0.028) 1px, transparent 1px) !important;
+  background: #fbf7ef !important;
+  background-image: radial-gradient(circle at 82% 8%, rgba(184,138,122,0.16), transparent 24%), linear-gradient(90deg, rgba(36,32,28,0.022) 1px, transparent 1px) !important;
   background-size: auto, 96px 96px !important;
-  font-family: 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif;
+  font-family: 'LXGW WenKai Lite', 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif;
   letter-spacing: 0.002em;
 }
 html.dark body {
@@ -180,7 +180,7 @@ html.dark {
 }
 body::selection,
 body *::selection {
-  color: #f8f5ef;
+  color: #fbf7ef;
   background: #1f1d19;
 }
 html.dark body::selection,
@@ -213,7 +213,7 @@ html.dark .progress-bar-container .swup-progress-bar {
 }
 .navbar-container .logo-title {
   color: #1f1d19 !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-weight: 500;
   letter-spacing: -0.02em;
 }
@@ -243,7 +243,7 @@ html.dark .progress-bar-container .swup-progress-bar {
   gap: 1.1rem;
 }
 .navbar-container .navbar-item a {
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 0.95rem;
   letter-spacing: -0.01em;
   text-transform: none !important;
@@ -281,7 +281,7 @@ html.dark .navbar-container .icon-item:hover {
 .navbar-container .navbar-drawer .drawer-navbar-item-sub > div {
   color: #1f1d19 !important;
   border-bottom: 1px solid rgba(36,32,28,0.13) !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
   font-weight: 500 !important;
   letter-spacing: -0.035em;
   transition: opacity 0.18s ease, transform 0.18s ease;
@@ -310,7 +310,7 @@ html.dark .navbar-container .icon-item:hover {
 }
 .portfolio-drawer-note span {
   color: #1f1d19 !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 1.6rem;
   line-height: 1;
   letter-spacing: -0.12em;
@@ -318,7 +318,7 @@ html.dark .navbar-container .icon-item:hover {
 .portfolio-drawer-note p {
   margin: 0;
   color: rgba(31,29,25,0.44) !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 0.94rem;
   line-height: 1.55;
 }
@@ -337,7 +337,7 @@ html.dark .navbar-container .navbar-drawer .drawer-navbar-item-sub i {
   color: rgba(255,253,248,0.46) !important;
 }
 .portfolio-home-page {
-  background: #f8f5ef !important;
+  background: #fbf7ef !important;
   min-height: 100vh;
 }
 .portfolio-home-page .main-content-container {
@@ -369,7 +369,7 @@ html.dark .portfolio-home-page {
 }
 .portfolio-archive-page {
   color: #1f1d19;
-  background: #f8f5ef !important;
+  background: #fbf7ef !important;
   min-height: 100vh;
 }
 .portfolio-archive-page .main-content-container {
@@ -415,6 +415,8 @@ html.dark .portfolio-home-page .portfolio-values h3,
 html.dark .portfolio-home-page .portfolio-note-card h3 a,
 html.dark .portfolio-home-page .portfolio-note-index,
 html.dark .portfolio-home-page .portfolio-project-grid h3,
+html.dark .portfolio-home-page .portfolio-network-card h3,
+html.dark .portfolio-home-page .portfolio-orbit-card span,
 html.dark .portfolio-home-page .portfolio-timeline h3,
 html.dark .portfolio-home-page .portfolio-contact h2,
 html.dark .portfolio-home-page .portfolio-text-link {
@@ -424,6 +426,8 @@ html.dark .portfolio-home-page .portfolio-summary,
 html.dark .portfolio-home-page .portfolio-about-body,
 html.dark .portfolio-home-page .portfolio-note-card p,
 html.dark .portfolio-home-page .portfolio-project-grid p,
+html.dark .portfolio-home-page .portfolio-network-card p,
+html.dark .portfolio-home-page .portfolio-orbit-card p,
 html.dark .portfolio-home-page .portfolio-timeline p,
 html.dark .portfolio-home-page .portfolio-contact p {
   color: rgba(255,253,248,0.62) !important;
@@ -445,9 +449,37 @@ html.dark .portfolio-home-page .portfolio-project-sketch::before,
 html.dark .portfolio-home-page .portfolio-project-sketch::after {
   border-color: rgba(255,253,248,0.56);
 }
+html.dark .portfolio-home-page .portfolio-network-orbit::before,
+html.dark .portfolio-home-page .portfolio-network-orbit::after {
+  border-color: rgba(255,253,248,0.12);
+}
+html.dark .portfolio-home-page .portfolio-orbit-card,
+html.dark .portfolio-home-page .portfolio-orbit-node,
+html.dark .portfolio-home-page .portfolio-network-card a {
+  background: rgba(255,253,248,0.06);
+  border-color: rgba(255,253,248,0.12);
+  box-shadow: 0 24px 70px rgba(0,0,0,0.2);
+}
+html.dark .portfolio-home-page .portfolio-orbit-node,
+html.dark .portfolio-home-page .portfolio-network-label,
+html.dark .portfolio-home-page .portfolio-network-meta {
+  color: rgba(255,253,248,0.58);
+}
+html.dark .portfolio-home-page .portfolio-network-label {
+  background: rgba(201,154,136,0.12);
+  border-color: rgba(201,154,136,0.22);
+}
+html.dark .portfolio-home-page .portfolio-network-mark {
+  color: rgba(255,253,248,0.72);
+  background: radial-gradient(circle at 52% 45%, rgba(201,154,136,0.16), rgba(255,253,248,0.05) 64%, transparent 70%);
+  border-color: rgba(255,253,248,0.12);
+}
+html.dark .portfolio-home-page .portfolio-network-meta {
+  border-top-color: rgba(255,253,248,0.12);
+}
 .portfolio-secondary-page {
   color: #1f1d19;
-  background: #f8f5ef !important;
+  background: #fbf7ef !important;
   min-height: 100vh;
 }
 .portfolio-secondary-page .main-content-container {
@@ -512,7 +544,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   height: 54px;
   color: #1f1d19 !important;
   text-decoration: none;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 2.2rem;
   line-height: 1;
   font-weight: 500;
@@ -537,7 +569,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   color: #1f1d19 !important;
   position: relative;
   text-decoration: none;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 1.28rem;
   line-height: 1.15;
   font-weight: 400;
@@ -570,7 +602,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 .portfolio-sidebar-footer p {
   margin: 0;
   color: rgba(31,29,25,0.44);
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 0.86rem;
 }
 .portfolio-socials {
@@ -600,7 +632,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   position: relative;
   overflow: hidden;
   overflow-x: hidden;
-  background: #f8f5ef;
+  background: #fbf7ef;
 }
 .portfolio-home::before {
   content: '';
@@ -646,7 +678,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   position: relative;
   margin: 0 0 1.4rem;
   color: #1f1d19;
-  font-family: 'Geist', 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif;
+  font-family: 'LXGW WenKai', 'Geist', 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif;
   font-size: clamp(0.78rem, 1.1vw, 0.92rem);
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -664,7 +696,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 .portfolio-hero h1 {
   margin: 0;
   color: #1f1d19;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: clamp(4.6rem, 10vw, 8.8rem);
   line-height: 0.88;
   font-weight: 500;
@@ -674,7 +706,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   display: inline-block;
   margin: 2rem 0 0;
   color: #1f1d19;
-  font-family: 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif;
+  font-family: 'LXGW WenKai Lite', 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif;
   font-size: clamp(1.2rem, 2vw, 1.72rem);
   line-height: 1.45;
   letter-spacing: -0.015em;
@@ -685,7 +717,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   max-width: 38rem;
   margin: 2.7rem 0 2.6rem;
   color: rgba(31,29,25,0.68);
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: clamp(1.05rem, 1.55vw, 1.32rem);
   line-height: 1.8;
 }
@@ -697,7 +729,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   position: relative;
   color: #1f1d19;
   text-decoration: none;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 1.06rem;
   line-height: 1.2;
   transition: opacity 0.18s ease, transform 0.18s ease;
@@ -709,7 +741,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   bottom: -0.7rem;
   width: 3.8rem;
   height: 2px;
-  background: linear-gradient(90deg, #ead8d0, transparent);
+  background: linear-gradient(90deg, #f6ebe4, transparent);
   transition: width 0.22s ease;
 }
 .portfolio-text-link:hover {
@@ -721,6 +753,18 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 }
 .portfolio-text-link span {
   color: inherit !important;
+}
+.portfolio-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+}
+.portfolio-text-link-muted {
+  color: rgba(31,29,25,0.44);
+}
+.portfolio-text-link-muted::after {
+  background: linear-gradient(90deg, rgba(184,138,122,0.28), transparent);
 }
 .portfolio-hero-art {
   margin: 0;
@@ -740,12 +784,99 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   margin: 1.2rem 0 0 auto;
   max-width: 16rem;
   color: rgba(31,29,25,0.44);
-  font-family: 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif;
+  font-family: 'LXGW WenKai Lite', 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif;
   font-size: 0.84rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   line-height: 1.35;
   transform: none;
+}
+.portfolio-network-orbit {
+  width: 42vw;
+  min-height: 480px;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+.portfolio-network-orbit::before,
+.portfolio-network-orbit::after {
+  content: '';
+  position: absolute;
+  inset: 9%;
+  border: 1px solid rgba(184,138,122,0.2);
+  border-radius: 50%;
+  transform: rotate(-10deg);
+}
+.portfolio-network-orbit::after {
+  inset: 20%;
+  border-color: rgba(36,32,28,0.1);
+  transform: rotate(18deg);
+}
+.portfolio-network-orbit figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+.portfolio-orbit-card {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 184px;
+  height: 184px;
+  color: #1f1d19;
+  background: rgba(255,253,248,0.82);
+  border: 1px solid rgba(184,138,122,0.24);
+  border-radius: 32px;
+  box-shadow: 0 26px 70px rgba(88,67,50,0.09);
+  backdrop-filter: blur(10px) saturate(116%);
+}
+.portfolio-orbit-card span {
+  color: #1f1d19;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-size: 4.3rem;
+  line-height: 1;
+  letter-spacing: -0.16em;
+}
+.portfolio-orbit-card p {
+  margin: -2rem 0 0;
+  color: rgba(31,29,25,0.44);
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.portfolio-orbit-node {
+  position: absolute;
+  z-index: 3;
+  display: inline-flex;
+  min-width: 4.8rem;
+  min-height: 2.7rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  color: #8f675b;
+  background: rgba(255,253,248,0.78);
+  border: 1px solid rgba(184,138,122,0.28);
+  border-radius: 999px;
+  box-shadow: 0 18px 44px rgba(88,67,50,0.08);
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.portfolio-orbit-node-api {
+  top: 18%;
+  right: 8%;
+}
+.portfolio-orbit-node-bead {
+  left: 4%;
+  bottom: 24%;
+}
+.portfolio-orbit-node-agent {
+  right: 16%;
+  bottom: 16%;
 }
 .portfolio-section-heading {
   max-width: 760px;
@@ -753,7 +884,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 .portfolio-section-heading h2 {
   margin: 0;
   color: #1f1d19;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: clamp(2.7rem, 5vw, 4.8rem);
   line-height: 1.02;
   font-weight: 500;
@@ -787,7 +918,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 }
 .portfolio-about-body {
   color: rgba(31,29,25,0.68);
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: clamp(1.15rem, 1.6vw, 1.42rem);
   line-height: 1.9;
 }
@@ -813,7 +944,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 .portfolio-values h3 {
   margin: 1rem 0 0.7rem;
   color: #1f1d19;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 1.34rem;
   font-weight: 500;
 }
@@ -821,7 +952,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   margin: 0 auto;
   max-width: 14.5rem;
   color: rgba(31,29,25,0.44);
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   line-height: 1.65;
 }
 .portfolio-glyph {
@@ -831,7 +962,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   width: 46px;
   height: 46px;
   color: #1f1d19;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 1.9rem;
   background: radial-gradient(circle, rgba(234,216,208,0.72), transparent 68%);
 }
@@ -849,7 +980,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 }
 .portfolio-note-card h3 {
   margin: 0;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: clamp(1.55rem, 2.6vw, 2.45rem);
   font-weight: 500;
   line-height: 1.1;
@@ -867,7 +998,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   max-width: 48rem;
   margin: 0.95rem 0 0;
   color: rgba(31,29,25,0.68);
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 1.05rem;
   line-height: 1.7;
 }
@@ -879,7 +1010,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 }
 .portfolio-note-index {
   color: #1f1d19;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 1.75rem;
   line-height: 1;
 }
@@ -900,7 +1031,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 .portfolio-project-grid h3 {
   margin: 1.6rem 0 0.65rem;
   color: #1f1d19;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 1.28rem;
   font-weight: 500;
 }
@@ -908,7 +1039,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   max-width: 17rem;
   margin: 0;
   color: rgba(31,29,25,0.44);
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   line-height: 1.65;
 }
 .portfolio-project-sketch {
@@ -971,6 +1102,126 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   border-radius: 80% 0;
   transform: rotate(28deg);
 }
+.portfolio-network-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.2rem, 2.6vw, 2rem);
+  margin-top: clamp(3.4rem, 5vw, 5.2rem);
+}
+.portfolio-network-card {
+  min-height: 420px;
+}
+.portfolio-network-card a {
+  position: relative;
+  display: flex;
+  height: 100%;
+  min-height: 420px;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: clamp(1.45rem, 2.6vw, 2rem);
+  color: #1f1d19;
+  text-decoration: none;
+  background: rgba(255,253,248,0.82);
+  border: 1px solid rgba(184,138,122,0.18);
+  border-radius: 28px;
+  box-shadow: 0 22px 62px rgba(88,67,50,0.075);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.portfolio-network-card a::before {
+  content: '';
+  position: absolute;
+  inset: -22% -28% auto auto;
+  width: 72%;
+  height: 58%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(184,138,122,0.18), transparent 68%);
+  transition: transform 0.24s ease, opacity 0.24s ease;
+}
+.portfolio-network-card a:hover {
+  transform: translateY(-4px);
+  border-color: rgba(184,138,122,0.42);
+  box-shadow: 0 28px 78px rgba(88,67,50,0.11);
+}
+.portfolio-network-card a:hover::before {
+  transform: translate(-4%, 6%) scale(1.08);
+  opacity: 0.88;
+}
+.portfolio-network-card h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0.9rem 0 0.75rem;
+  color: #1f1d19;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-size: clamp(1.65rem, 2.5vw, 2.3rem);
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+}
+.portfolio-network-card p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: rgba(31,29,25,0.68);
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-size: 1.03rem;
+  line-height: 1.72;
+}
+.portfolio-network-label {
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  padding: 0.42rem 0.72rem;
+  color: #8f675b;
+  background: rgba(246,235,228,0.86);
+  border: 1px solid rgba(184,138,122,0.18);
+  border-radius: 999px;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.portfolio-network-mark {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 9.2rem;
+  height: 9.2rem;
+  margin: clamp(2rem, 4vw, 3.4rem) auto clamp(1.6rem, 3vw, 2.8rem);
+  color: rgba(31,29,25,0.74);
+  background: radial-gradient(circle at 52% 45%, rgba(246,235,228,0.9), rgba(223,231,219,0.5) 64%, transparent 70%);
+  border: 1px solid rgba(184,138,122,0.2);
+  border-radius: 36px;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.portfolio-network-card-api .portfolio-network-mark {
+  background: radial-gradient(circle at 52% 45%, rgba(214,226,235,0.8), rgba(246,235,228,0.64) 64%, transparent 70%);
+}
+.portfolio-network-card-bead .portfolio-network-mark {
+  background: radial-gradient(circle at 52% 45%, rgba(246,235,228,0.95), rgba(255,253,248,0.75) 64%, transparent 70%);
+}
+.portfolio-network-card-agent .portfolio-network-mark {
+  background: radial-gradient(circle at 52% 45%, rgba(223,231,219,0.82), rgba(246,235,228,0.66) 64%, transparent 70%);
+}
+.portfolio-network-meta {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.3rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid rgba(36,32,28,0.13);
+  color: rgba(31,29,25,0.44);
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
+}
 .portfolio-learning {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(360px, 1fr);
@@ -993,7 +1244,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   height: 0.78rem;
   border: 2px solid #1f1d19;
   border-radius: 50%;
-  background: #f8f5ef;
+  background: #fbf7ef;
 }
 .portfolio-timeline article:last-child {
   padding-bottom: 0;
@@ -1008,7 +1259,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 .portfolio-timeline h3 {
   margin: 0 0 0.6rem;
   color: #1f1d19;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 1.42rem;
   font-weight: 500;
 }
@@ -1016,7 +1267,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   max-width: 36rem;
   margin: 0;
   color: rgba(31,29,25,0.68);
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   line-height: 1.7;
 }
 .portfolio-contact {
@@ -1029,7 +1280,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 .portfolio-contact h2 {
   margin: 0;
   color: #1f1d19;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: clamp(3rem, 6vw, 5.4rem);
   line-height: 0.96;
   font-weight: 500;
@@ -1039,7 +1290,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   max-width: 40rem;
   margin: 1.7rem 0 0;
   color: rgba(31,29,25,0.68);
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 1.18rem;
   line-height: 1.85;
 }
@@ -1069,7 +1320,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 .portfolio-archive-page .portfolio-archive-intro h1 {
   margin: 0;
   color: #1f1d19;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: clamp(4.2rem, 11vw, 9rem);
   line-height: 0.85;
   font-weight: 500;
@@ -1078,7 +1329,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 .portfolio-archive-page .portfolio-archive-intro p {
   margin: 0 0 0.45rem;
   color: rgba(31,29,25,0.68);
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: clamp(1.15rem, 1.8vw, 1.45rem);
   line-height: 1.82;
 }
@@ -1095,7 +1346,7 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
 }
 .portfolio-archive-page .archive-list-container .archive-year {
   color: #1f1d19;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: clamp(2.5rem, 6vw, 4.4rem) !important;
   line-height: 1;
   font-weight: 500 !important;
@@ -1132,13 +1383,13 @@ html.dark .portfolio-archive-page .navbar-container .icon-item:hover {
   left: -0.43rem;
   top: 1.15rem;
   border: 1px solid #1f1d19;
-  background: #f8f5ef;
+  background: #fbf7ef;
   border-radius: 50%;
-  box-shadow: 0 0 0 6px #f8f5ef;
+  box-shadow: 0 0 0 6px #fbf7ef;
 }
 .portfolio-archive-page .archive-list-container .article-title {
   color: #1f1d19;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: clamp(1.55rem, 3vw, 2.45rem) !important;
   line-height: 1.18;
   font-weight: 500;
@@ -1197,7 +1448,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   padding: 0 0 clamp(1.7rem, 4vw, 2.6rem) !important;
   color: #1f1d19 !important;
   border-bottom: 1px solid rgba(36,32,28,0.13);
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
   font-size: clamp(4rem, 10vw, 8rem) !important;
   line-height: 0.88 !important;
   font-weight: 500 !important;
@@ -1209,7 +1460,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   display: block;
   margin: 0 0 1.1rem;
   color: rgba(31,29,25,0.68);
-  font-family: 'Geist', 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif;
+  font-family: 'LXGW WenKai', 'Geist', 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif;
   font-size: clamp(1.15rem, 1.8vw, 1.45rem);
   line-height: 1;
   letter-spacing: 0;
@@ -1221,7 +1472,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   width: 4rem;
   height: 2px;
   margin: 1rem 0 0;
-  background: linear-gradient(90deg, #ead8d0, transparent);
+  background: linear-gradient(90deg, #f6ebe4, transparent);
 }
 .portfolio-secondary-page .page-template-content > h1:first-child::before {
   content: 'About';
@@ -1256,7 +1507,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
 }
 .portfolio-secondary-page .article-header .name {
   color: rgba(31,29,25,0.68) !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
   font-size: 1rem !important;
   font-weight: 400 !important;
   line-height: 1 !important;
@@ -1316,7 +1567,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
 .portfolio-secondary-page .markdown-body p:not(.not-markdown),
 .portfolio-secondary-page .markdown-body li:not(.not-markdown) {
   color: rgba(31,29,25,0.68);
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: clamp(1.06rem, 1.45vw, 1.22rem);
   line-height: 1.92;
 }
@@ -1348,7 +1599,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
 .portfolio-empty-state h2 {
   margin: 0 !important;
   color: #1f1d19 !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
   font-size: clamp(2rem, 5vw, 3.8rem) !important;
   line-height: 0.98 !important;
   font-weight: 500 !important;
@@ -1358,7 +1609,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   max-width: 28rem;
   margin: 0 auto !important;
   color: rgba(31,29,25,0.68) !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
   font-size: 1.05rem !important;
   line-height: 1.78 !important;
 }
@@ -1367,7 +1618,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   margin: 0.35rem auto 0;
   color: #1f1d19 !important;
   border-bottom: 1px solid rgba(31,29,25,0.22) !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   text-decoration: none !important;
   transition: opacity 0.18s ease;
 }
@@ -1377,6 +1628,150 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
 .post-copyright-info,
 .article-copyright-info-container {
   display: none !important;
+}
+.network-page {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+.network-page__hero {
+  max-width: 840px;
+}
+.network-page__hero h1 {
+  margin: 0 !important;
+  color: #1f1d19 !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-size: clamp(4rem, 10vw, 8rem) !important;
+  line-height: 0.86 !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.078em !important;
+}
+.network-page__hero p {
+  max-width: 45rem;
+  margin: 1.7rem 0 0 !important;
+  color: rgba(31,29,25,0.68) !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-size: clamp(1.12rem, 1.7vw, 1.34rem) !important;
+  line-height: 1.86 !important;
+}
+.network-page__eyebrow {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 1.15rem !important;
+  color: #8f675b !important;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace !important;
+  font-size: 0.76rem !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+}
+.network-page__eyebrow::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.55rem;
+  width: 3.4rem;
+  height: 1px;
+  background: rgba(184,138,122,0.42);
+}
+.network-project-list {
+  display: grid;
+  gap: clamp(1rem, 2.4vw, 1.6rem);
+}
+.network-project-card a {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.28fr) minmax(8rem, 0.26fr) minmax(0, 1fr) auto;
+  gap: clamp(1.2rem, 3vw, 2.4rem);
+  align-items: center;
+  overflow: hidden;
+  padding: clamp(1.25rem, 3vw, 2.2rem);
+  color: #1f1d19 !important;
+  text-decoration: none !important;
+  background: rgba(255,253,248,0.82);
+  border: 1px solid rgba(184,138,122,0.18) !important;
+  border-radius: 26px;
+  box-shadow: 0 22px 62px rgba(88,67,50,0.075);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.network-project-card a:hover {
+  transform: translateY(-3px);
+  border-color: rgba(184,138,122,0.42) !important;
+  box-shadow: 0 28px 78px rgba(88,67,50,0.11);
+}
+.network-project-card h2 {
+  margin: 0 0 0.65rem !important;
+  color: #1f1d19 !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-size: clamp(1.65rem, 3vw, 2.45rem) !important;
+  line-height: 1.05 !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.055em !important;
+}
+.network-project-card p {
+  margin: 0 !important;
+  color: rgba(31,29,25,0.68) !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-size: 1.02rem !important;
+  line-height: 1.72 !important;
+}
+.network-project-card__label {
+  width: fit-content;
+  padding: 0.42rem 0.72rem;
+  color: #8f675b;
+  background: rgba(246,235,228,0.86);
+  border: 1px solid rgba(184,138,122,0.18);
+  border-radius: 999px;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.network-project-card__mark {
+  display: grid;
+  place-items: center;
+  width: 7.4rem;
+  height: 7.4rem;
+  color: rgba(31,29,25,0.74);
+  background: radial-gradient(circle at 52% 45%, rgba(246,235,228,0.92), rgba(223,231,219,0.52) 64%, transparent 70%);
+  border: 1px solid rgba(184,138,122,0.2);
+  border-radius: 28px;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.network-project-card__link {
+  color: rgba(31,29,25,0.44);
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+html.dark .portfolio-secondary-page .network-page__hero h1,
+html.dark .portfolio-secondary-page .network-project-card h2 {
+  color: rgba(255,253,248,0.94) !important;
+}
+html.dark .portfolio-secondary-page .network-page__hero p,
+html.dark .portfolio-secondary-page .network-project-card p {
+  color: rgba(255,253,248,0.64) !important;
+}
+html.dark .portfolio-secondary-page .network-page__eyebrow,
+html.dark .portfolio-secondary-page .network-project-card__label,
+html.dark .portfolio-secondary-page .network-project-card__link {
+  color: rgba(255,253,248,0.58) !important;
+}
+html.dark .portfolio-secondary-page .network-project-card a {
+  color: rgba(255,253,248,0.88) !important;
+  background: rgba(255,253,248,0.05);
+  border-color: rgba(255,253,248,0.12) !important;
+  box-shadow: 0 26px 80px rgba(0,0,0,0.22);
+}
+html.dark .portfolio-secondary-page .network-project-card__label {
+  background: rgba(201,154,136,0.12);
+  border-color: rgba(201,154,136,0.22);
+}
+html.dark .portfolio-secondary-page .network-project-card__mark {
+  color: rgba(255,253,248,0.72);
+  background: radial-gradient(circle at 52% 45%, rgba(201,154,136,0.16), rgba(255,253,248,0.05) 64%, transparent 70%);
+  border-color: rgba(255,253,248,0.12);
 }
 .write-page .right-side-tools-container {
   display: none !important;
@@ -1432,7 +1827,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
 .write-studio__hero h1 {
   margin: 0;
   color: #1f1d19 !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
   font-size: clamp(4.2rem, 10vw, 9rem) !important;
   line-height: 0.86 !important;
   font-weight: 500 !important;
@@ -1444,7 +1839,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   position: relative;
   margin: 0 0 1.1rem !important;
   color: #1f1d19 !important;
-  font-family: 'Geist', 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif !important;
+  font-family: 'LXGW WenKai', 'Geist', 'Nunito Sans', 'Segoe UI', 'Noto Sans SC', sans-serif !important;
   font-size: clamp(1.12rem, 1.6vw, 1.45rem) !important;
   line-height: 1 !important;
 }
@@ -1455,13 +1850,13 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   bottom: -0.55rem;
   width: 4rem;
   height: 2px;
-  background: linear-gradient(90deg, #ead8d0, transparent);
+  background: linear-gradient(90deg, #f6ebe4, transparent);
 }
 .write-studio__lead {
   max-width: 44rem;
   margin: 1.7rem 0 0 !important;
   color: rgba(31,29,25,0.68) !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
   font-size: clamp(1.16rem, 1.85vw, 1.45rem) !important;
   line-height: 1.8 !important;
 }
@@ -1521,7 +1916,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   border-radius: 14px !important;
   outline: none !important;
   box-shadow: none !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
   font-size: clamp(1.02rem, 1.3vw, 1.12rem) !important;
   line-height: 1.75 !important;
   letter-spacing: 0.004em !important;
@@ -1552,7 +1947,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
 .write-studio__hint {
   margin: 0 !important;
   color: rgba(31,29,25,0.44) !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
   font-size: 0.93rem !important;
   line-height: 1.55 !important;
 }
@@ -1573,7 +1968,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   box-sizing: border-box;
   padding: 0 1.15rem !important;
   border-radius: 999px !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
   font-size: 1rem !important;
   line-height: 1 !important;
   text-decoration: none !important;
@@ -1591,7 +1986,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   outline-offset: 3px;
 }
 .write-studio__primary {
-  color: #f8f5ef !important;
+  color: #fbf7ef !important;
   background: #1f1d19 !important;
   border: 1px solid #1f1d19 !important;
 }
@@ -1601,7 +1996,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   transform: none !important;
 }
 .write-studio__publish {
-  color: #f8f5ef !important;
+  color: #fbf7ef !important;
   background: #1f1d19 !important;
   border: 1px solid #1f1d19 !important;
 }
@@ -1637,7 +2032,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
 .write-studio__guide h2 {
   margin: 0 !important;
   color: #1f1d19 !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
   font-size: clamp(2rem, 3.8vw, 3.4rem) !important;
   line-height: 1.02 !important;
   font-weight: 500 !important;
@@ -1647,7 +2042,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
 .write-studio__guide p {
   margin: 0 !important;
   color: rgba(31,29,25,0.68) !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
   font-size: 1.04rem !important;
   line-height: 1.82 !important;
 }
@@ -1675,7 +2070,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   align-items: baseline;
   list-style: none !important;
   color: rgba(31,29,25,0.68) !important;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif !important;
   line-height: 1.55 !important;
   counter-increment: writeSteps;
 }
@@ -1690,7 +2085,7 @@ html.dark .portfolio-archive-page .archive-list-container .article-item::after {
   display: inline-flex;
   width: fit-content;
   color: #1f1d19;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: 2.4rem;
   line-height: 1;
   letter-spacing: -0.12em;
@@ -1828,7 +2223,7 @@ footer.footer {
   background: #fffdf8 !important;
   border: 1px solid rgba(36,32,28,0.13) !important;
   border-radius: 18px !important;
-  box-shadow: 0 18px 54px rgba(54,45,35,0.055) !important;
+  box-shadow: 0 18px 54px rgba(88,67,50,0.075) !important;
   backdrop-filter: none !important;
 }
 .page-template-container,
@@ -1847,7 +2242,7 @@ footer.footer {
 .markdown-body h5:not(.not-markdown),
 .markdown-body h6:not(.not-markdown) {
   color: #1f1d19;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-weight: 500;
   letter-spacing: -0.04em;
 }
@@ -1959,7 +2354,7 @@ footer.footer.site-footer-minimal .site-copyright {
   background: #fffdf8;
   border: 1px solid rgba(36,32,28,0.13);
   border-radius: 18px;
-  box-shadow: 0 18px 54px rgba(54,45,35,0.055);
+  box-shadow: 0 18px 54px rgba(88,67,50,0.075);
 }
 .modern-404__panel .modern-404__eyebrow {
   margin: 0 0 1rem;
@@ -1972,7 +2367,7 @@ footer.footer.site-footer-minimal .site-copyright {
 .modern-404__panel h1 {
   margin: 0;
   color: #1f1d19;
-  font-family: Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
+  font-family: 'LXGW WenKai', Georgia, Cambria, 'Times New Roman', 'Noto Serif SC', serif;
   font-size: clamp(2.8rem, 6vw, 5rem);
   font-weight: 500;
   letter-spacing: -0.06em;
@@ -2011,6 +2406,9 @@ footer.footer.site-footer-minimal .site-copyright {
     justify-self: start;
   }
   .portfolio-hero-art img {
+    width: 78vw;
+  }
+  .portfolio-network-orbit {
     width: 78vw;
   }
 }
@@ -2125,6 +2523,37 @@ footer.footer.site-footer-minimal .site-copyright {
   .portfolio-project-grid article {
     min-height: 320px;
   }
+  .portfolio-network-grid {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-network-card,
+  .portfolio-network-card a {
+    min-height: 340px;
+  }
+  .portfolio-network-orbit {
+    min-height: 360px;
+  }
+  .portfolio-orbit-card {
+    width: 148px;
+    height: 148px;
+    border-radius: 26px;
+  }
+  .portfolio-orbit-card span {
+    font-size: 3.3rem;
+  }
+  .portfolio-orbit-node {
+    min-width: 4rem;
+    min-height: 2.35rem;
+    font-size: 0.68rem;
+  }
+  .network-project-card a {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+  .network-project-card__mark {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
   .page-template-container,
   .post-page-container .article-content-container {
     padding: 2rem 1.15rem;
@@ -2147,6 +2576,26 @@ footer.footer.site-footer-minimal .site-copyright {
   .portfolio-project-sketch {
     width: 150px;
     height: 150px;
+  }
+  .portfolio-hero-actions {
+    display: grid;
+    align-items: start;
+  }
+  .portfolio-network-orbit {
+    width: 100%;
+    min-height: 330px;
+  }
+  .portfolio-orbit-node-api {
+    top: 12%;
+    right: 0;
+  }
+  .portfolio-orbit-node-bead {
+    left: 0;
+    bottom: 22%;
+  }
+  .portfolio-orbit-node-agent {
+    right: 4%;
+    bottom: 10%;
   }
 }
 @media (prefers-reduced-motion: reduce) {
