@@ -420,7 +420,7 @@ img[lazyload] {
   clear: both;
 }
 .markdown-body {
-  font-family: 'LXGW WenKai Lite', 'LXGW WenKai Lite', sans-serif;
+  font-family: 'Geist Sans', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif, sans-serif;
   font-size: 16px;
 }
 .markdown-body blockquote:not(.not-markdown) {
@@ -546,7 +546,7 @@ img[lazyload] {
 .markdown-body .h4:not(.not-markdown),
 .markdown-body .h5:not(.not-markdown),
 .markdown-body .h6:not(.not-markdown) {
-  font-family: 'LXGW WenKai Lite', 'LXGW WenKai Lite', sans-serif;
+  font-family: 'Geist Sans', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif, sans-serif;
   color: var(--second-text-color);
   line-height: 1.5;
 }
@@ -1299,7 +1299,7 @@ pre .deletion {
   border-radius: 50px;
 }
 .article-copyright-info-container {
-  font-family: 'LXGW WenKai Lite', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
+  font-family: 'Geist Sans', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
   position: relative;
   width: 100%;
   box-sizing: border-box;
@@ -1788,7 +1788,7 @@ pre .deletion {
   line-height: 1;
   color: var(--first-text-color);
   transform: translateY(1px);
-  font-family: 'LXGW WenKai';
+  font-family: 'Geist Sans';
 }
 .navbar-container .navbar-content .logo-title h1 {
   margin: 0;
@@ -2613,7 +2613,7 @@ html.is-animating .scroll-progress-bar {
   width: 100%;
   font-size: 0.92rem;
   box-sizing: border-box;
-  font-family: 'LXGW WenKai Lite', 'LXGW WenKai Lite', 'Noto Sans', 'Noto Sans SC', sans-serif;
+  font-family: 'Geist Sans', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif, 'Noto Sans', 'Noto Sans SC', sans-serif;
 }
 .post-toc-wrap .post-toc .toc-title {
   font-size: 0.8rem;
@@ -4054,7 +4054,7 @@ html.is-animating .transition-fade-down {
   line-height: 1.45;
   letter-spacing: -0.018em;
   color: var(--second-text-color);
-  font-family: 'LXGW WenKai Lite', 'LXGW WenKai Lite', 'Noto Sans SC', sans-serif;
+  font-family: 'Geist Sans', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif, 'Noto Sans SC', sans-serif;
   margin: 0;
 }
 @media (max-width: 768px) {
@@ -4624,7 +4624,7 @@ html.is-animating .transition-fade-down {
   font-family: 'Chillax-Variable', sans-serif;
   text-align: center;
   letter-spacing: 0.03em;
-  font-family: 'LXGW WenKai';
+  font-family: 'Geist Sans';
 }
 .home-sidebar-container .sidebar-links .site-info .announcement {
   font-size: 0.82rem;
@@ -7141,5 +7141,1068 @@ footer.footer.site-footer-minimal .site-copyright {
   *::after {
     transition: none !important;
     animation: none !important;
+  }
+}
+html,
+body {
+  color: #18181b !important;
+  background: #fafafa !important;
+  background-image: none !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+html.dark,
+html.dark body {
+  color: #ededed !important;
+  background: #0a0a0a !important;
+  background-image: none !important;
+}
+body::selection,
+body *::selection {
+  color: #18181b !important;
+  background: rgba(141,123,109,0.18) !important;
+}
+html.dark body::selection,
+html.dark body *::selection {
+  color: #ededed !important;
+  background: rgba(255,255,255,0.18) !important;
+}
+* {
+  scrollbar-color: rgba(24,24,27,0.25) transparent;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(24,24,27,0.22);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(24,24,27,0.38);
+}
+html.dark * {
+  scrollbar-color: rgba(255,255,255,0.24) transparent;
+}
+html.dark *::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.18);
+}
+html.dark *::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.32);
+}
+.portfolio-home *,
+.portfolio-sidebar-shell *,
+.network-page *,
+.write-studio *,
+.markdown-body,
+.navbar-container,
+.page-template-container,
+.post-page-container {
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+}
+.portfolio-note-index,
+.portfolio-note-card time,
+.portfolio-network-label,
+.portfolio-network-meta,
+.portfolio-orbit-node,
+.portfolio-orbit-card p,
+.network-page__eyebrow,
+.network-project-card__label,
+.network-project-card__mark,
+.network-project-card__link,
+.write-studio__field label,
+.write-studio__status,
+.write-studio__receipt span,
+.write-studio__code,
+.markdown-body code,
+.statistics,
+.statistics .number,
+.statistics .count,
+.home-article-date,
+.home-article-meta-info,
+.article-date,
+.post-count,
+.site-copyright {
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace !important;
+}
+.portfolio-home-page,
+.portfolio-archive-page,
+.portfolio-secondary-page,
+.write-page {
+  color: #18181b !important;
+  background: #fafafa !important;
+}
+html.dark .portfolio-home-page,
+html.dark .portfolio-archive-page,
+html.dark .portfolio-secondary-page,
+html.dark .write-page {
+  color: #ededed !important;
+  background: #0a0a0a !important;
+}
+.portfolio-home {
+  color: #18181b !important;
+  background: transparent !important;
+}
+.portfolio-home::before {
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+  background: radial-gradient(circle at 76% 14%, rgba(141,123,109,0.1), transparent 28%), radial-gradient(circle at 14% 74%, rgba(24,24,27,0.035), transparent 24%) !important;
+  background-size: auto !important;
+}
+html.dark .portfolio-home {
+  color: #ededed !important;
+  background: transparent !important;
+}
+html.dark .portfolio-home::before {
+  background: radial-gradient(circle at 76% 14%, rgba(255,255,255,0.075), transparent 28%), radial-gradient(circle at 16% 74%, rgba(141,123,109,0.09), transparent 24%) !important;
+}
+.navbar-container {
+  background: rgba(250,250,250,0.82) !important;
+  border-bottom: 1px solid rgba(24,24,27,0.075) !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(18px) saturate(135%) !important;
+}
+.navbar-container .logo-title {
+  color: #18181b !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 620 !important;
+  letter-spacing: -0.035em !important;
+}
+.navbar-container .navbar-item a,
+.navbar-container .icon-item {
+  color: rgba(24,24,27,0.62) !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.01em !important;
+  transition: opacity 0.18s ease, color 0.18s ease;
+}
+.navbar-container .navbar-item a:hover,
+.navbar-container .navbar-item a.active,
+.navbar-container .icon-item:hover {
+  color: #18181b !important;
+  opacity: 0.72;
+}
+.navbar-container .navbar-item a.active {
+  border-bottom-color: rgba(24,24,27,0.22) !important;
+}
+.navbar-container .navbar-drawer {
+  background: rgba(250,250,250,0.97) !important;
+  color: #18181b !important;
+  backdrop-filter: blur(18px) saturate(130%) !important;
+}
+.navbar-container .navbar-drawer .drawer-navbar-item a,
+.navbar-container .navbar-drawer .drawer-navbar-item-sub a,
+.navbar-container .navbar-drawer .drawer-navbar-item > div,
+.navbar-container .navbar-drawer .drawer-navbar-item-sub > div {
+  color: #18181b !important;
+  border-bottom-color: rgba(24,24,27,0.075) !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-weight: 560 !important;
+  letter-spacing: -0.045em !important;
+}
+.navbar-container .navbar-drawer .drawer-navbar-item i,
+.navbar-container .navbar-drawer .drawer-navbar-item-sub i {
+  color: rgba(24,24,27,0.42) !important;
+}
+html.dark .navbar-container {
+  background: rgba(10,10,10,0.76) !important;
+  border-bottom-color: rgba(255,255,255,0.09) !important;
+}
+html.dark .navbar-container .logo-title {
+  color: #ededed !important;
+}
+html.dark .navbar-container .navbar-item a,
+html.dark .navbar-container .icon-item {
+  color: #a1a1aa !important;
+}
+html.dark .navbar-container .navbar-item a:hover,
+html.dark .navbar-container .navbar-item a.active,
+html.dark .navbar-container .icon-item:hover {
+  color: #ededed !important;
+}
+html.dark .navbar-container .navbar-item a.active {
+  border-bottom-color: rgba(237,237,237,0.24) !important;
+}
+html.dark .navbar-container .navbar-drawer {
+  background: rgba(10,10,10,0.96) !important;
+  color: #ededed !important;
+}
+html.dark .navbar-container .navbar-drawer .drawer-navbar-item a,
+html.dark .navbar-container .navbar-drawer .drawer-navbar-item-sub a,
+html.dark .navbar-container .navbar-drawer .drawer-navbar-item > div,
+html.dark .navbar-container .navbar-drawer .drawer-navbar-item-sub > div {
+  color: #ededed !important;
+  border-bottom-color: rgba(255,255,255,0.09) !important;
+}
+html.dark .navbar-container .navbar-drawer .drawer-navbar-item i,
+html.dark .navbar-container .navbar-drawer .drawer-navbar-item-sub i {
+  color: rgba(237,237,237,0.46) !important;
+}
+.portfolio-sidebar-shell {
+  background: rgba(250,250,250,0.72) !important;
+  border-right: 1px solid rgba(24,24,27,0.075) !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(18px) saturate(125%) !important;
+}
+.portfolio-sidebar {
+  padding: clamp(3.2rem, 7vh, 6.4rem) 4.4rem 2.8rem !important;
+}
+.portfolio-mark {
+  width: 46px !important;
+  height: 46px !important;
+  color: #18181b !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-size: 1.7rem !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.12em !important;
+}
+.portfolio-nav {
+  gap: 0.92rem !important;
+}
+.portfolio-nav a {
+  color: rgba(24,24,27,0.62) !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-size: 1.02rem !important;
+  font-weight: 520 !important;
+  letter-spacing: -0.025em !important;
+}
+.portfolio-nav a::after {
+  bottom: -0.28rem !important;
+  width: 1.8rem !important;
+  background: rgba(24,24,27,0.18) !important;
+}
+.portfolio-nav a:hover {
+  color: #18181b !important;
+  opacity: 0.78;
+}
+.portfolio-sidebar-footer {
+  gap: 6.2rem !important;
+}
+.portfolio-sidebar-footer p {
+  color: rgba(24,24,27,0.42) !important;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace !important;
+  font-size: 0.72rem !important;
+}
+.portfolio-socials {
+  gap: 1.05rem !important;
+}
+.portfolio-socials a {
+  color: rgba(24,24,27,0.62) !important;
+  width: 22px !important;
+  height: 22px !important;
+}
+.portfolio-socials i {
+  font-size: 0.82rem !important;
+  opacity: 0.72 !important;
+}
+html.dark .portfolio-sidebar-shell {
+  background: rgba(10,10,10,0.72) !important;
+  border-right-color: rgba(255,255,255,0.09) !important;
+}
+html.dark .portfolio-mark,
+html.dark .portfolio-nav a,
+html.dark .portfolio-socials a {
+  color: #ededed !important;
+}
+html.dark .portfolio-nav a {
+  opacity: 0.72;
+}
+html.dark .portfolio-nav a::after {
+  background: rgba(237,237,237,0.2) !important;
+}
+html.dark .portfolio-nav a:hover {
+  opacity: 1;
+}
+html.dark .portfolio-sidebar-footer p {
+  color: rgba(237,237,237,0.46) !important;
+}
+.portfolio-section {
+  min-height: 68vh !important;
+  padding: clamp(5.4rem, 8vw, 8.6rem) clamp(3.4rem, 7vw, 8rem) !important;
+  border-bottom: 1px solid rgba(24,24,27,0.075) !important;
+}
+.portfolio-hero {
+  min-height: 100vh !important;
+  grid-template-columns: minmax(0, 0.92fr) minmax(340px, 0.88fr) !important;
+}
+.portfolio-hero::after {
+  background: rgba(24,24,27,0.14) !important;
+}
+.portfolio-kicker,
+.network-page__eyebrow,
+.write-studio__eyebrow {
+  color: #8d7b6d !important;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace !important;
+  font-size: 0.72rem !important;
+  font-weight: 520 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+}
+.portfolio-kicker::after,
+.network-page__eyebrow::after,
+.write-studio__eyebrow::after {
+  background: rgba(141,123,109,0.34) !important;
+}
+.portfolio-hero h1,
+.portfolio-section-heading h2,
+.network-page__hero h1,
+.write-studio__hero h1,
+.modern-404__panel h1 {
+  color: #18181b !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-weight: 680 !important;
+  letter-spacing: -0.085em !important;
+}
+.portfolio-hero h1 {
+  font-size: clamp(4.8rem, 9.5vw, 8.7rem) !important;
+  line-height: 0.88 !important;
+}
+.portfolio-section-heading h2 {
+  font-size: clamp(2.5rem, 4.8vw, 4.6rem) !important;
+  line-height: 1.02 !important;
+}
+.portfolio-statement {
+  margin-top: 1.6rem !important;
+  color: #18181b !important;
+  border-bottom: 0 !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-size: clamp(1.18rem, 2vw, 1.58rem) !important;
+  font-weight: 520 !important;
+  letter-spacing: -0.035em !important;
+}
+.portfolio-summary,
+.portfolio-about-body,
+.portfolio-values p,
+.portfolio-note-card p,
+.portfolio-network-card p,
+.portfolio-timeline p,
+.portfolio-contact p,
+.network-page__hero p,
+.network-project-card p,
+.write-studio__lead,
+.write-studio__guide p,
+.write-studio__hint,
+.markdown-body p:not(.not-markdown),
+.markdown-body li:not(.not-markdown) {
+  color: rgba(24,24,27,0.62) !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  line-height: 1.76 !important;
+}
+.portfolio-summary {
+  max-width: 36rem !important;
+  margin: 2.2rem 0 2.3rem !important;
+  font-size: clamp(1rem, 1.35vw, 1.18rem) !important;
+}
+.portfolio-text-link {
+  color: #18181b !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-size: 0.96rem !important;
+  font-weight: 560 !important;
+  letter-spacing: -0.018em !important;
+}
+.portfolio-text-link::after {
+  height: 1px !important;
+  background: rgba(24,24,27,0.18) !important;
+}
+.portfolio-text-link:hover {
+  opacity: 0.68;
+  transform: translateX(2px);
+}
+.portfolio-text-link-muted,
+.portfolio-admin-link {
+  color: rgba(24,24,27,0.42) !important;
+}
+html.dark .portfolio-section {
+  border-bottom-color: rgba(255,255,255,0.09) !important;
+}
+html.dark .portfolio-hero h1,
+html.dark .portfolio-section-heading h2,
+html.dark .portfolio-statement,
+html.dark .portfolio-values h3,
+html.dark .portfolio-note-card h3 a,
+html.dark .portfolio-note-index,
+html.dark .portfolio-network-card h3,
+html.dark .portfolio-timeline h3,
+html.dark .portfolio-contact h2,
+html.dark .portfolio-text-link,
+html.dark .network-page__hero h1,
+html.dark .network-project-card h2,
+html.dark .write-studio__hero h1,
+html.dark .write-studio__guide h2,
+html.dark .modern-404__panel h1 {
+  color: #ededed !important;
+}
+html.dark .portfolio-kicker,
+html.dark .network-page__eyebrow,
+html.dark .write-studio__eyebrow {
+  color: rgba(221,207,193,0.74) !important;
+}
+html.dark .portfolio-summary,
+html.dark .portfolio-about-body,
+html.dark .portfolio-values p,
+html.dark .portfolio-note-card p,
+html.dark .portfolio-network-card p,
+html.dark .portfolio-timeline p,
+html.dark .portfolio-contact p,
+html.dark .network-page__hero p,
+html.dark .network-project-card p,
+html.dark .write-studio__lead,
+html.dark .write-studio__guide p,
+html.dark .write-studio__hint,
+html.dark .markdown-body p:not(.not-markdown),
+html.dark .markdown-body li:not(.not-markdown) {
+  color: #a1a1aa !important;
+}
+.portfolio-values,
+.portfolio-note-list,
+.portfolio-note-card,
+.portfolio-timeline,
+.portfolio-network-meta {
+  border-color: rgba(24,24,27,0.075) !important;
+}
+.portfolio-values {
+  border-top-color: rgba(24,24,27,0.075) !important;
+}
+.portfolio-values article {
+  min-height: 150px !important;
+  padding: 2.15rem clamp(1.1rem, 2vw, 2rem) !important;
+  border-right-color: rgba(24,24,27,0.075) !important;
+}
+.portfolio-values h3 {
+  color: #18181b !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-size: 1.08rem !important;
+  font-weight: 620 !important;
+  letter-spacing: -0.035em !important;
+}
+.portfolio-glyph {
+  width: auto !important;
+  height: auto !important;
+  color: rgba(24,24,27,0.42) !important;
+  background: transparent !important;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace !important;
+  font-size: 0.74rem !important;
+  letter-spacing: 0.16em !important;
+}
+.portfolio-note-card {
+  grid-template-columns: 4.2rem minmax(0, 1fr) auto !important;
+  padding: 2rem 0 !important;
+}
+.portfolio-note-card h3 {
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-size: clamp(1.35rem, 2.2vw, 2.1rem) !important;
+  font-weight: 640 !important;
+  letter-spacing: -0.06em !important;
+}
+.portfolio-note-card h3 a {
+  color: #18181b !important;
+}
+.portfolio-note-card time,
+.portfolio-note-card .portfolio-note-index {
+  color: rgba(24,24,27,0.42) !important;
+  font-size: 0.76rem !important;
+}
+html.dark .portfolio-values,
+html.dark .portfolio-note-list,
+html.dark .portfolio-note-card,
+html.dark .portfolio-timeline,
+html.dark .portfolio-network-meta {
+  border-color: rgba(255,255,255,0.09) !important;
+}
+html.dark .portfolio-glyph,
+html.dark .portfolio-note-card time,
+html.dark .portfolio-note-index {
+  color: rgba(237,237,237,0.46) !important;
+}
+.portfolio-network-orbit {
+  min-height: 440px !important;
+}
+.portfolio-network-orbit::before,
+.portfolio-network-orbit::after {
+  border-color: rgba(24,24,27,0.105) !important;
+}
+.portfolio-network-orbit figcaption {
+  color: rgba(24,24,27,0.42) !important;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace !important;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.13em !important;
+}
+.portfolio-orbit-card {
+  width: 168px !important;
+  height: 168px !important;
+  color: #18181b !important;
+  background: rgba(255,255,255,0.84) !important;
+  border: 1px solid rgba(24,24,27,0.075) !important;
+  border-radius: 22px !important;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.055) !important;
+  backdrop-filter: blur(14px) saturate(120%) !important;
+}
+.portfolio-orbit-card span {
+  color: #18181b !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-size: 3.6rem !important;
+  font-weight: 650 !important;
+}
+.portfolio-orbit-card p {
+  color: rgba(24,24,27,0.42) !important;
+  font-size: 0.66rem !important;
+}
+.portfolio-orbit-node {
+  min-width: 4.2rem !important;
+  min-height: 2.35rem !important;
+  color: rgba(24,24,27,0.62) !important;
+  background: rgba(255,255,255,0.76) !important;
+  border: 1px solid rgba(24,24,27,0.075) !important;
+  border-radius: 999px !important;
+  box-shadow: 0 12px 34px rgba(0,0,0,0.04) !important;
+  font-size: 0.68rem !important;
+}
+html.dark .portfolio-network-orbit::before,
+html.dark .portfolio-network-orbit::after {
+  border-color: rgba(255,255,255,0.09) !important;
+}
+html.dark .portfolio-network-orbit figcaption {
+  color: rgba(237,237,237,0.46) !important;
+}
+html.dark .portfolio-orbit-card,
+html.dark .portfolio-orbit-node {
+  color: #ededed !important;
+  background: rgba(255,255,255,0.052) !important;
+  border-color: rgba(255,255,255,0.09) !important;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.28) !important;
+}
+html.dark .portfolio-orbit-card span {
+  color: #ededed !important;
+}
+html.dark .portfolio-orbit-card p,
+html.dark .portfolio-orbit-node {
+  color: #a1a1aa !important;
+}
+.portfolio-network-grid {
+  gap: clamp(1rem, 2vw, 1.35rem) !important;
+}
+.portfolio-network-card {
+  min-height: 340px !important;
+}
+.portfolio-network-card a {
+  min-height: 340px !important;
+  padding: clamp(1.35rem, 2.4vw, 1.85rem) !important;
+  color: #18181b !important;
+  background: rgba(255,255,255,0.78) !important;
+  border: 1px solid rgba(24,24,27,0.075) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 18px 55px rgba(0,0,0,0.045) !important;
+  backdrop-filter: blur(12px) saturate(116%) !important;
+}
+.portfolio-network-card a::before {
+  opacity: 0 !important;
+}
+.portfolio-network-card a:hover {
+  transform: translateY(-3px) !important;
+  border-color: rgba(24,24,27,0.12) !important;
+  box-shadow: 0 22px 68px rgba(0,0,0,0.065) !important;
+}
+.portfolio-network-card h3 {
+  color: #18181b !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-size: clamp(1.3rem, 2vw, 1.82rem) !important;
+  font-weight: 640 !important;
+  letter-spacing: -0.055em !important;
+}
+.portfolio-network-card p {
+  font-size: 0.96rem !important;
+  line-height: 1.68 !important;
+}
+.portfolio-network-label,
+.network-project-card__label {
+  color: rgba(24,24,27,0.42) !important;
+  background: rgba(24,24,27,0.035) !important;
+  border: 1px solid rgba(24,24,27,0.075) !important;
+  border-radius: 999px !important;
+}
+.portfolio-network-mark {
+  width: 5.3rem !important;
+  height: 5.3rem !important;
+  margin: clamp(1.8rem, 3.2vw, 2.5rem) 0 clamp(1.3rem, 2.4vw, 2rem) !important;
+  color: rgba(24,24,27,0.62) !important;
+  background: #f3f2ef !important;
+  border: 1px solid rgba(24,24,27,0.075) !important;
+  border-radius: 16px !important;
+  font-size: 0.72rem !important;
+}
+.portfolio-network-card-api .portfolio-network-mark,
+.portfolio-network-card-bead .portfolio-network-mark,
+.portfolio-network-card-agent .portfolio-network-mark {
+  background: #f3f2ef !important;
+}
+.portfolio-network-meta {
+  color: rgba(24,24,27,0.42) !important;
+  font-size: 0.7rem !important;
+}
+html.dark .portfolio-network-card a {
+  color: #ededed !important;
+  background: rgba(255,255,255,0.052) !important;
+  border-color: rgba(255,255,255,0.09) !important;
+  box-shadow: 0 24px 76px rgba(0,0,0,0.26) !important;
+}
+html.dark .portfolio-network-card a:hover {
+  border-color: rgba(255,255,255,0.15) !important;
+  box-shadow: 0 28px 88px rgba(0,0,0,0.34) !important;
+}
+html.dark .portfolio-network-label,
+html.dark .network-project-card__label {
+  color: rgba(237,237,237,0.46) !important;
+  background: rgba(255,255,255,0.055) !important;
+  border-color: rgba(255,255,255,0.09) !important;
+}
+html.dark .portfolio-network-mark {
+  color: #a1a1aa !important;
+  background: rgba(255,255,255,0.045) !important;
+  border-color: rgba(255,255,255,0.09) !important;
+}
+html.dark .portfolio-network-meta {
+  color: rgba(237,237,237,0.46) !important;
+  border-top-color: rgba(255,255,255,0.09) !important;
+}
+.portfolio-learning {
+  grid-template-columns: minmax(0, 0.82fr) minmax(340px, 1fr) !important;
+}
+.portfolio-timeline {
+  border-left-color: rgba(24,24,27,0.075) !important;
+}
+.portfolio-timeline article {
+  padding-left: 2.7rem !important;
+}
+.portfolio-timeline article::before {
+  background: #fafafa !important;
+  border-color: rgba(24,24,27,0.22) !important;
+}
+.portfolio-timeline span {
+  color: rgba(24,24,27,0.42) !important;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace !important;
+}
+.portfolio-timeline h3 {
+  color: #18181b !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-weight: 630 !important;
+  letter-spacing: -0.045em !important;
+}
+html.dark .portfolio-timeline article::before {
+  background: #0a0a0a !important;
+  border-color: rgba(237,237,237,0.24) !important;
+}
+html.dark .portfolio-timeline span {
+  color: rgba(237,237,237,0.46) !important;
+}
+.network-page {
+  gap: clamp(2.2rem, 5vw, 4rem) !important;
+}
+.network-page__hero {
+  max-width: 780px !important;
+}
+.network-page__hero h1 {
+  color: #18181b !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-size: clamp(3.8rem, 9vw, 7.6rem) !important;
+  font-weight: 680 !important;
+  letter-spacing: -0.088em !important;
+}
+.network-page__hero p {
+  max-width: 42rem !important;
+  font-size: clamp(1.02rem, 1.45vw, 1.18rem) !important;
+  line-height: 1.72 !important;
+}
+.network-project-list {
+  gap: 1rem !important;
+}
+.network-project-card a {
+  grid-template-columns: minmax(6.2rem, 0.18fr) minmax(5.6rem, 0.16fr) minmax(0, 1fr) auto !important;
+  color: #18181b !important;
+  background: rgba(255,255,255,0.78) !important;
+  border: 1px solid rgba(24,24,27,0.075) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 18px 55px rgba(0,0,0,0.045) !important;
+  backdrop-filter: blur(12px) saturate(116%) !important;
+}
+.network-project-card a:hover {
+  transform: translateY(-2px) !important;
+  border-color: rgba(24,24,27,0.12) !important;
+  box-shadow: 0 22px 68px rgba(0,0,0,0.065) !important;
+}
+.network-project-card h2 {
+  color: #18181b !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-size: clamp(1.35rem, 2.4vw, 2.12rem) !important;
+  font-weight: 640 !important;
+  letter-spacing: -0.06em !important;
+}
+.network-project-card__mark {
+  width: 5.2rem !important;
+  height: 5.2rem !important;
+  color: rgba(24,24,27,0.62) !important;
+  background: #f3f2ef !important;
+  border: 1px solid rgba(24,24,27,0.075) !important;
+  border-radius: 16px !important;
+  font-size: 0.7rem !important;
+}
+.network-project-card__link {
+  color: rgba(24,24,27,0.42) !important;
+  font-size: 0.72rem !important;
+}
+html.dark .network-project-card a {
+  color: #ededed !important;
+  background: rgba(255,255,255,0.052) !important;
+  border-color: rgba(255,255,255,0.09) !important;
+  box-shadow: 0 24px 76px rgba(0,0,0,0.26) !important;
+}
+html.dark .network-project-card__mark {
+  color: #a1a1aa !important;
+  background: rgba(255,255,255,0.045) !important;
+  border-color: rgba(255,255,255,0.09) !important;
+}
+html.dark .network-project-card__link {
+  color: rgba(237,237,237,0.46) !important;
+}
+.home-article-item,
+.sidebar-content,
+.sidebar-links,
+.page-template-container,
+.post-page-container .article-content-container,
+.right-bottom-tools,
+a.page-number,
+a.extend,
+footer.footer,
+.modern-404__panel {
+  background: rgba(255,255,255,0.78) !important;
+  border: 1px solid rgba(24,24,27,0.075) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 18px 55px rgba(0,0,0,0.045) !important;
+  backdrop-filter: blur(12px) saturate(116%) !important;
+}
+.page-template-container,
+.post-page-container .article-content-container {
+  padding: clamp(2rem, 5vw, 3.6rem) !important;
+}
+.markdown-body {
+  color: rgba(24,24,27,0.62) !important;
+}
+.markdown-body h1:not(.not-markdown),
+.markdown-body h2:not(.not-markdown),
+.markdown-body h3:not(.not-markdown),
+.markdown-body h4:not(.not-markdown),
+.markdown-body h5:not(.not-markdown),
+.markdown-body h6:not(.not-markdown) {
+  color: #18181b !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-weight: 640 !important;
+  letter-spacing: -0.055em !important;
+}
+.markdown-body a:not(.not-markdown) {
+  color: #18181b !important;
+  border-bottom-color: rgba(24,24,27,0.16) !important;
+}
+.markdown-body a:not(.not-markdown):hover {
+  opacity: 0.66;
+  border-bottom-color: rgba(24,24,27,0.32) !important;
+}
+.markdown-body p:not(.not-markdown) code,
+.markdown-body li:not(.not-markdown) code,
+.markdown-body td:not(.not-markdown) code,
+.markdown-body span:not(.not-markdown) code {
+  color: #18181b !important;
+  background: rgba(24,24,27,0.045) !important;
+  border-color: rgba(24,24,27,0.085) !important;
+  border-radius: 7px !important;
+}
+html.dark .home-article-item,
+html.dark .sidebar-content,
+html.dark .sidebar-links,
+html.dark .page-template-container,
+html.dark .post-page-container .article-content-container,
+html.dark .right-bottom-tools,
+html.dark a.page-number,
+html.dark a.extend,
+html.dark footer.footer,
+html.dark .modern-404__panel {
+  background: rgba(255,255,255,0.052) !important;
+  border-color: rgba(255,255,255,0.09) !important;
+  box-shadow: 0 24px 76px rgba(0,0,0,0.28) !important;
+}
+html.dark .markdown-body {
+  color: #a1a1aa !important;
+}
+html.dark .markdown-body h1:not(.not-markdown),
+html.dark .markdown-body h2:not(.not-markdown),
+html.dark .markdown-body h3:not(.not-markdown),
+html.dark .markdown-body h4:not(.not-markdown),
+html.dark .markdown-body h5:not(.not-markdown),
+html.dark .markdown-body h6:not(.not-markdown) {
+  color: #ededed !important;
+}
+html.dark .markdown-body a:not(.not-markdown) {
+  color: #ededed !important;
+  border-bottom-color: rgba(237,237,237,0.18) !important;
+}
+html.dark .markdown-body p:not(.not-markdown) code,
+html.dark .markdown-body li:not(.not-markdown) code,
+html.dark .markdown-body td:not(.not-markdown) code,
+html.dark .markdown-body span:not(.not-markdown) code {
+  color: #ededed !important;
+  background: rgba(255,255,255,0.055) !important;
+  border-color: rgba(255,255,255,0.09) !important;
+}
+.write-studio {
+  color: #18181b !important;
+}
+.write-studio::before {
+  background: radial-gradient(circle, rgba(141,123,109,0.1), transparent 66%) !important;
+  opacity: 0.72 !important;
+}
+.write-studio__hero {
+  max-width: 720px !important;
+}
+.write-studio__lead {
+  font-size: clamp(1rem, 1.45vw, 1.18rem) !important;
+}
+.write-studio__sheet {
+  background: rgba(255,255,255,0.78) !important;
+  border: 1px solid rgba(24,24,27,0.075) !important;
+  border-radius: 22px !important;
+  box-shadow: 0 20px 70px rgba(0,0,0,0.05) !important;
+  backdrop-filter: blur(12px) saturate(116%) !important;
+}
+.write-studio__sheet::before {
+  display: none !important;
+}
+.write-studio__guide {
+  background: rgba(24,24,27,0.025) !important;
+  border-left-color: rgba(24,24,27,0.075) !important;
+}
+.write-studio__guide h2 {
+  color: #18181b !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.07em !important;
+}
+.write-studio__guide li {
+  color: rgba(24,24,27,0.62) !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+}
+.write-studio__guide li::before {
+  color: rgba(24,24,27,0.42) !important;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace !important;
+}
+.write-studio__guide-mark {
+  color: #18181b !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-weight: 650 !important;
+}
+.write-studio__field label {
+  color: rgba(24,24,27,0.42) !important;
+}
+.write-studio__field input,
+.write-studio__field textarea {
+  color: #18181b !important;
+  background: rgba(255,255,255,0.82) !important;
+  border: 1px solid rgba(24,24,27,0.075) !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+}
+.write-studio__field input::placeholder,
+.write-studio__field textarea::placeholder {
+  color: rgba(24,24,27,0.34) !important;
+}
+.write-studio__field input:focus,
+.write-studio__field textarea:focus {
+  background: #fff !important;
+  border-color: rgba(24,24,27,0.26) !important;
+  transform: none !important;
+}
+.write-studio__field input:focus-visible,
+.write-studio__field textarea:focus-visible {
+  box-shadow: 0 0 0 4px rgba(141,123,109,0.12) !important;
+}
+.write-studio__primary,
+.write-studio__secondary {
+  border-radius: 999px !important;
+  font-family: 'Geist Sans', 'SF Pro Display', 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif !important;
+  font-weight: 560 !important;
+}
+.write-studio__primary,
+.write-studio__publish {
+  color: #fff !important;
+  background: #18181b !important;
+  border-color: #18181b !important;
+}
+.write-studio__secondary {
+  color: #18181b !important;
+  background: rgba(255,255,255,0.68) !important;
+  border-color: rgba(24,24,27,0.075) !important;
+}
+.write-studio__receipt span {
+  color: rgba(24,24,27,0.42) !important;
+  background: rgba(255,255,255,0.62) !important;
+  border-color: rgba(24,24,27,0.075) !important;
+}
+html.dark .write-studio {
+  color: #ededed !important;
+}
+html.dark .write-studio::before {
+  background: radial-gradient(circle, rgba(255,255,255,0.06), transparent 66%) !important;
+}
+html.dark .write-studio .write-studio__sheet,
+html.dark .write-studio .write-studio__guide {
+  background: rgba(255,255,255,0.052) !important;
+  border-color: rgba(255,255,255,0.09) !important;
+  box-shadow: 0 24px 76px rgba(0,0,0,0.3) !important;
+}
+html.dark .write-studio .write-studio__guide {
+  background: rgba(255,255,255,0.035) !important;
+}
+html.dark .write-studio .write-studio__guide h2,
+html.dark .write-studio .write-studio__guide-mark {
+  color: #ededed !important;
+}
+html.dark .write-studio .write-studio__field label,
+html.dark .write-studio .write-studio__guide li::before {
+  color: rgba(237,237,237,0.46) !important;
+}
+html.dark .write-studio .write-studio__field input,
+html.dark .write-studio .write-studio__field textarea {
+  color: #ededed !important;
+  background: rgba(255,255,255,0.055) !important;
+  border-color: rgba(255,255,255,0.09) !important;
+}
+html.dark .write-studio .write-studio__field input::placeholder,
+html.dark .write-studio .write-studio__field textarea::placeholder {
+  color: rgba(237,237,237,0.34) !important;
+}
+html.dark .write-studio .write-studio__field input:focus,
+html.dark .write-studio .write-studio__field textarea:focus {
+  background: rgba(255,255,255,0.075) !important;
+  border-color: rgba(255,255,255,0.2) !important;
+}
+html.dark .write-studio .write-studio__primary,
+html.dark .write-studio .write-studio__publish {
+  color: #0a0a0a !important;
+  background: #ededed !important;
+  border-color: #ededed !important;
+}
+html.dark .write-studio .write-studio__secondary {
+  color: #ededed !important;
+  background: rgba(255,255,255,0.045) !important;
+  border-color: rgba(255,255,255,0.09) !important;
+}
+html.dark .write-studio .write-studio__receipt span {
+  color: rgba(237,237,237,0.46) !important;
+  background: rgba(255,255,255,0.045) !important;
+  border-color: rgba(255,255,255,0.09) !important;
+}
+.code-container,
+.highlight,
+.highlight .code pre,
+.highlight .gutter pre,
+pre {
+  background: #171717 !important;
+}
+.code-container {
+  border-radius: 14px !important;
+  box-shadow: 0 18px 46px rgba(0,0,0,0.12) !important;
+}
+footer.footer.site-footer-minimal {
+  color: rgba(24,24,27,0.42) !important;
+  box-shadow: none !important;
+}
+html.dark footer.footer.site-footer-minimal {
+  color: rgba(237,237,237,0.46) !important;
+}
+@media (max-width: 1180px) {
+  .portfolio-sidebar {
+    padding: 4rem 3.2rem 2.4rem !important;
+  }
+}
+@media (max-width: 860px) {
+  .portfolio-sidebar-shell {
+    background: rgba(250,250,250,0.88) !important;
+    border-bottom: 1px solid rgba(24,24,27,0.075) !important;
+  }
+  html.dark .portfolio-sidebar-shell {
+    background: rgba(10,10,10,0.86) !important;
+    border-bottom-color: rgba(255,255,255,0.09) !important;
+  }
+  .portfolio-sidebar {
+    padding: 0.92rem 1.1rem !important;
+  }
+  .portfolio-mark {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 1.45rem !important;
+  }
+  .portfolio-nav {
+    gap: 0.9rem !important;
+  }
+  .portfolio-nav a {
+    font-size: 0.94rem !important;
+  }
+  .portfolio-section {
+    padding: 4.1rem 1.24rem !important;
+  }
+  .portfolio-hero {
+    min-height: calc(100dvh - 70px) !important;
+    grid-template-columns: 1fr !important;
+  }
+  .portfolio-hero h1 {
+    font-size: clamp(4.3rem, 22vw, 7rem) !important;
+  }
+  .portfolio-statement {
+    font-size: clamp(1.25rem, 6vw, 1.8rem) !important;
+  }
+  .portfolio-values {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  .portfolio-note-card {
+    grid-template-columns: 1fr !important;
+  }
+  .portfolio-network-card,
+  .portfolio-network-card a {
+    min-height: 300px !important;
+  }
+  .network-project-card a {
+    grid-template-columns: 1fr !important;
+  }
+  .network-project-card__mark {
+    width: 4.8rem !important;
+    height: 4.8rem !important;
+  }
+  .write-studio__sheet {
+    grid-template-columns: 1fr !important;
+  }
+  .write-studio__guide {
+    border-left: 0 !important;
+    border-top: 1px solid rgba(24,24,27,0.075) !important;
+  }
+  html.dark .write-studio__guide {
+    border-top-color: rgba(255,255,255,0.09) !important;
+  }
+}
+@media (max-width: 560px) {
+  .portfolio-values {
+    grid-template-columns: 1fr !important;
+  }
+  .portfolio-summary {
+    font-size: 1rem !important;
+  }
+  .portfolio-network-orbit {
+    min-height: 320px !important;
+  }
+  .portfolio-orbit-card {
+    width: 138px !important;
+    height: 138px !important;
+  }
+  .portfolio-orbit-card span {
+    font-size: 3rem !important;
   }
 }
