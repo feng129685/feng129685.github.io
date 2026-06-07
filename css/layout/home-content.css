@@ -7,7 +7,7 @@
   --second-background-color: #f7f7f7;
   --third-background-color: #f4f4f4;
   --third-background-color-transparent: rgba(241,241,241,0.72);
-  --primary-color: #6b6b6b;
+  --primary-color: #1f1d19;
   --first-text-color: rgba(0,0,0,0.82);
   --second-text-color: rgba(0,0,0,0.74);
   --third-text-color: rgba(0,0,0,0.46);
@@ -15,7 +15,7 @@
   --default-text-color: rgba(0,0,0,0.64);
   --invert-text-color: #bebec6;
   --border-color: rgba(0,0,0,0.05);
-  --selection-color: #7a7a7a;
+  --selection-color: #38352d;
   --shadow-color-1: rgba(0,0,0,0.035);
   --shadow-color-2: rgba(0,0,0,0.028);
   --shadow-hover-color: rgba(0,0,0,0.12);
@@ -54,7 +54,7 @@
   --second-background-color: #f7f7f7;
   --third-background-color: #f4f4f4;
   --third-background-color-transparent: rgba(241,241,241,0.72);
-  --primary-color: #6b6b6b;
+  --primary-color: #1f1d19;
   --first-text-color: rgba(0,0,0,0.82);
   --second-text-color: rgba(0,0,0,0.74);
   --third-text-color: rgba(0,0,0,0.46);
@@ -62,7 +62,7 @@
   --default-text-color: rgba(0,0,0,0.64);
   --invert-text-color: #bebec6;
   --border-color: rgba(0,0,0,0.05);
-  --selection-color: #7a7a7a;
+  --selection-color: #38352d;
   --shadow-color-1: rgba(0,0,0,0.035);
   --shadow-color-2: rgba(0,0,0,0.028);
   --shadow-hover-color: rgba(0,0,0,0.12);
@@ -101,7 +101,7 @@
   --second-background-color: #242529;
   --third-background-color: #292b2f;
   --third-background-color-transparent: rgba(32,33,36,0.6);
-  --primary-color: #6b6b6b;
+  --primary-color: #1f1d19;
   --first-text-color: rgba(255,255,255,0.9);
   --second-text-color: rgba(255,255,255,0.82);
   --third-text-color: rgba(255,255,255,0.5);
@@ -109,7 +109,7 @@
   --default-text-color: rgba(255,255,255,0.72);
   --invert-text-color: #373d3f;
   --border-color: rgba(255,255,255,0.08);
-  --selection-color: #7a7a7a;
+  --selection-color: #38352d;
   --shadow-color-1: rgba(255,255,255,0.05);
   --shadow-color-2: rgba(255,255,255,0.03);
   --shadow-hover-color: rgba(255,255,255,0.12);
