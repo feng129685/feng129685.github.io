@@ -8155,6 +8155,412 @@ html.dark .friends-page-shell .page-template-content {
     font-size: clamp(2.48rem, 11.4vw, 3.55rem) !important;
   }
 }
+.groceries-page-shell,
+html.dark .groceries-page-shell {
+  color: #20201d !important;
+  background: radial-gradient(circle at 80% 8%, rgba(234,213,204,0.2), transparent 26%), radial-gradient(circle at 18% 78%, rgba(223,230,217,0.3), transparent 28%), linear-gradient(180deg, #fcfaf6 0%, #f8f5ee 100%) !important;
+}
+.groceries-page-shell .main-content,
+html.dark .groceries-page-shell .main-content {
+  width: calc(100% - 2rem) !important;
+  max-width: 1120px !important;
+  margin: 0 auto !important;
+  color: #20201d !important;
+  background: transparent !important;
+}
+.groceries-page-shell .page-template-container,
+html.dark .groceries-page-shell .page-template-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #20201d !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.groceries-page-shell .page-template-content,
+html.dark .groceries-page-shell .page-template-content {
+  display: none !important;
+}
+.groceries-page {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: clamp(2.8rem, 6vw, 5rem) 0 clamp(4.5rem, 8vw, 7rem);
+  color: #20201d !important;
+  font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif !important;
+}
+.groceries-page__hero {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 clamp(1.6rem, 4vw, 2.8rem);
+  padding: clamp(3.2rem, 7vw, 5.4rem) clamp(1.4rem, 4vw, 4rem);
+  color: #20201d !important;
+  background: rgba(252,250,246,0.7) !important;
+  background-image: radial-gradient(circle at 82% 28%, rgba(223,230,217,0.44), transparent 30%), radial-gradient(circle at 20% 78%, rgba(234,213,204,0.38), transparent 28%) !important;
+  border: 1px solid rgba(32,32,29,0.14) !important;
+  box-shadow: none !important;
+}
+.groceries-page__hero::before {
+  content: '';
+  position: absolute;
+  right: clamp(1.5rem, 4vw, 3.8rem);
+  top: clamp(1.5rem, 4vw, 3.4rem);
+  width: clamp(7rem, 16vw, 12rem);
+  height: clamp(7rem, 16vw, 12rem);
+  pointer-events: none;
+  opacity: 0.55;
+  background: radial-gradient(circle at 50% 50%, rgba(32,32,29,0.065) 0 1px, transparent 1px);
+  background-size: 13px 13px;
+  border: 1px solid rgba(32,32,29,0.085);
+  transform: rotate(-6deg);
+}
+.groceries-page__eyebrow {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 0 0 1.1rem !important;
+  color: rgba(32,32,29,0.58) !important;
+  font-family: 'Segoe Print', 'Bradley Hand ITC', 'Comic Sans MS', 'LXGW WenKai', cursive !important;
+  font-size: clamp(1.02rem, 1.8vw, 1.36rem) !important;
+  transform: rotate(-1deg);
+}
+.groceries-page__eyebrow::after {
+  content: '';
+  display: block;
+  width: 4.2rem;
+  height: 0.34rem;
+  margin: 0.18rem 0 0;
+  background: rgba(234,213,204,0.72);
+}
+.groceries-page__hero h1 {
+  position: relative;
+  z-index: 1;
+  max-width: 820px;
+  margin: 0 !important;
+  color: #20201d !important;
+  font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-size: clamp(3.8rem, 8vw, 7.2rem) !important;
+  line-height: 0.92 !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.075em !important;
+  text-wrap: balance;
+}
+.groceries-page__hero p:not(.groceries-page__eyebrow) {
+  position: relative;
+  z-index: 1;
+  max-width: 44rem;
+  margin: clamp(1.45rem, 3vw, 2.2rem) 0 0 !important;
+  color: rgba(32,32,29,0.58) !important;
+  font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-size: clamp(1.05rem, 1.7vw, 1.28rem) !important;
+  line-height: 1.82 !important;
+}
+.groceries-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) auto auto auto auto;
+  gap: 0.85rem;
+  align-items: end;
+  margin: 0 0 clamp(1.4rem, 3vw, 2rem);
+  padding: 1rem;
+  color: #20201d !important;
+  background: rgba(252,250,246,0.72);
+  border: 1px solid rgba(32,32,29,0.14);
+}
+.groceries-control-group,
+.groceries-view-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.groceries-controls button,
+.groceries-select select {
+  min-height: 2.35rem;
+  color: #20201d !important;
+  background: transparent !important;
+  border: 1px solid rgba(32,32,29,0.14) !important;
+  border-radius: 0 !important;
+  font-family: 'Geist Mono', 'JetBrains Mono', Consolas, monospace !important;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 180ms ease, opacity 180ms ease, transform 180ms ease;
+}
+.groceries-controls button {
+  padding: 0.55rem 0.72rem;
+}
+.groceries-controls button:hover {
+  background: rgba(255,255,255,0.42) !important;
+  transform: translateY(-1px);
+}
+.groceries-controls button.is-active {
+  color: #f8f5ee !important;
+  background: #20201d !important;
+  border-color: #20201d !important;
+}
+.groceries-select {
+  display: grid;
+  gap: 0.4rem;
+}
+.groceries-select span {
+  color: rgba(32,32,29,0.36) !important;
+  font-family: 'Geist Mono', 'JetBrains Mono', Consolas, monospace !important;
+  font-size: 0.62rem !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.groceries-select select {
+  padding: 0.5rem 2rem 0.5rem 0.7rem;
+}
+.grocery-count {
+  margin: 0 !important;
+  color: rgba(32,32,29,0.36) !important;
+  font-family: 'Geist Mono', 'JetBrains Mono', Consolas, monospace !important;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.groceries-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(32,32,29,0.14);
+  border-left: 1px solid rgba(32,32,29,0.14);
+}
+.groceries-grid.is-list {
+  grid-template-columns: 1fr;
+}
+.groceries-grid.is-list .grocery-card a {
+  min-height: auto;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  grid-template-rows: auto;
+  align-items: start;
+}
+.grocery-card {
+  min-width: 0;
+  border-right: 1px solid rgba(32,32,29,0.14);
+  border-bottom: 1px solid rgba(32,32,29,0.14);
+}
+.grocery-card[hidden] {
+  display: none !important;
+}
+.grocery-card a {
+  min-height: 285px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: clamp(1.15rem, 2vw, 1.8rem);
+  padding: clamp(1.25rem, 2.6vw, 2rem);
+  color: #20201d !important;
+  text-decoration: none !important;
+  background: rgba(252,250,246,0.46) !important;
+  transition: background 180ms ease, transform 220ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.grocery-card a:hover {
+  background: rgba(255,255,255,0.58) !important;
+  transform: translateY(-3px);
+}
+.grocery-card__mark {
+  display: inline-grid;
+  width: 4.35rem;
+  height: 4.35rem;
+  place-items: center;
+  color: rgba(32,32,29,0.36) !important;
+  border: 1px solid rgba(32,32,29,0.085);
+  border-radius: 50%;
+  font-family: 'Segoe Print', 'Bradley Hand ITC', 'Comic Sans MS', 'LXGW WenKai', cursive !important;
+  font-size: 0.92rem !important;
+  text-transform: lowercase;
+  transform: rotate(-7deg);
+}
+.grocery-card__meta,
+.grocery-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+.grocery-card__meta span,
+.grocery-card__tags span {
+  color: rgba(32,32,29,0.36) !important;
+  font-family: 'Geist Mono', 'JetBrains Mono', Consolas, monospace !important;
+  font-size: 0.62rem !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.grocery-card h2 {
+  margin: 1.25rem 0 0.85rem !important;
+  color: #20201d !important;
+  font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-size: clamp(1.55rem, 3vw, 2.35rem) !important;
+  line-height: 1 !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.055em !important;
+}
+.grocery-card p {
+  margin: 0 0 1.25rem !important;
+  color: rgba(32,32,29,0.58) !important;
+  font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-size: 0.98rem !important;
+  line-height: 1.7 !important;
+  text-wrap: pretty;
+}
+.groceries-empty {
+  margin: 1.2rem 0 0 !important;
+  padding: 1.1rem;
+  color: rgba(32,32,29,0.58) !important;
+  border: 1px solid rgba(32,32,29,0.14);
+  font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif !important;
+}
+.friend-card__avatar {
+  display: inline-grid;
+  width: 4.8rem;
+  height: 4.8rem;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(32,32,29,0.085);
+  border-radius: 50%;
+  background: rgba(252,250,246,0.68);
+  transform: rotate(-4deg);
+}
+.friend-card__avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.7) contrast(0.96);
+}
+.friend-card__avatar--empty {
+  color: rgba(32,32,29,0.36) !important;
+  font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-size: 2rem;
+}
+.friend-card a {
+  position: relative;
+}
+.friend-card a::after {
+  content: attr(data-title);
+  position: absolute;
+  left: clamp(1.25rem, 3vw, 2.2rem);
+  right: clamp(1.25rem, 3vw, 2.2rem);
+  bottom: clamp(1rem, 2vw, 1.5rem);
+  color: rgba(32,32,29,0.36);
+  font-family: 'Geist Mono', 'JetBrains Mono', Consolas, monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+.friend-card a:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.friend-card--apply a {
+  background: rgba(248,245,238,0.48) !important;
+}
+.sketch-writing-grid,
+.sketch-status-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid rgba(32,32,29,0.14);
+  border-left: 1px solid rgba(32,32,29,0.14);
+}
+.sketch-writing-grid a,
+.sketch-status-grid a,
+.sketch-status-grid div {
+  min-height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(1.2rem, 2.6vw, 2rem);
+  color: #20201d !important;
+  text-decoration: none !important;
+  background: rgba(252,250,246,0.4);
+  border-right: 1px solid rgba(32,32,29,0.14);
+  border-bottom: 1px solid rgba(32,32,29,0.14);
+}
+.sketch-writing-grid a span,
+.sketch-status-grid a span,
+.sketch-status-grid div span,
+.sketch-writing-grid a small,
+.sketch-status-grid a small,
+.sketch-status-grid div small {
+  color: rgba(32,32,29,0.36) !important;
+  font-family: 'Geist Mono', 'JetBrains Mono', Consolas, monospace !important;
+  font-size: 0.64rem !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.sketch-writing-grid a strong,
+.sketch-status-grid a strong,
+.sketch-status-grid div strong {
+  color: #20201d !important;
+  font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif !important;
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+}
+@media (max-width: 1180px) {
+  .groceries-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+  .groceries-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 860px) {
+  .groceries-page-shell .main-content,
+  html.dark .groceries-page-shell .main-content {
+    width: calc(100% - 1.75rem) !important;
+  }
+  .groceries-page {
+    padding-top: 2.2rem;
+  }
+  .groceries-page__hero {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 3rem 1.25rem 2.8rem;
+  }
+  .groceries-page__hero h1 {
+    max-width: 100%;
+    font-size: clamp(2.6rem, 11.8vw, 4.2rem) !important;
+    line-height: 0.98 !important;
+  }
+  .groceries-page__hero p:not(.groceries-page__eyebrow) {
+    max-width: 100%;
+    font-size: 1rem !important;
+    line-height: 1.72 !important;
+    overflow-wrap: anywhere;
+  }
+  .groceries-controls,
+  .groceries-grid,
+  .sketch-writing-grid,
+  .sketch-status-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .grocery-card {
+    border-right: 0;
+  }
+  .groceries-grid.is-list .grocery-card a {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 460px) {
+  .groceries-page__hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .groceries-page__hero h1 {
+    font-size: clamp(2.38rem, 10.8vw, 3.35rem) !important;
+  }
+  .grocery-card a {
+    min-height: auto;
+    padding: 1.25rem;
+  }
+}
 @-moz-keyframes treeReveal {
   from {
     opacity: 0;

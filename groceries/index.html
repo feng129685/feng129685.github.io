@@ -78,7 +78,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://feng.xx.kg/tools/"/>
+    <link rel="canonical" href="https://feng.xx.kg/groceries/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -87,14 +87,14 @@
         
         <meta name="description" content="A quiet personal network for notes, tools, and small experiments.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Tools">
-<meta property="og:url" content="https://feng.xx.kg/tools/index.html">
+<meta property="og:title" content="Groceries Box">
+<meta property="og:url" content="https://feng.xx.kg/groceries/index.html">
 <meta property="og:site_name" content="feng">
 <meta property="og:description" content="A quiet personal network for notes, tools, and small experiments.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://feng.xx.kg/images/redefine-og.webp">
-<meta property="article:published_time" content="2026-06-07T15:20:00.000Z">
-<meta property="article:modified_time" content="2026-06-07T15:18:07.736Z">
+<meta property="article:published_time" content="2026-06-07T16:20:00.000Z">
+<meta property="article:modified_time" content="2026-06-07T16:26:23.250Z">
 <meta property="article:author" content="feng">
 <meta property="article:tag" content="personal website, digital garden, project hub, tools, notes">
 <meta name="twitter:card" content="summary">
@@ -110,7 +110,7 @@
     
     <title>
         
-            Tools | feng
+            Groceries Box | feng
         
     </title>
 
@@ -194,7 +194,7 @@
 </div>
 
 
-<main class="page-container portfolio-secondary-page tools-page-shell" id="swup">
+<main class="page-container portfolio-secondary-page groceries-page-shell" id="swup">
 
 	
 
@@ -293,7 +293,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class=""
+                                <a class="active"
                                    href="/groceries"
                                         >
                                     <i class="fa-regular fa-compass fa-fw"></i>
@@ -310,7 +310,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active"
+                                <a class=""
                                    href="/tools"
                                         >
                                     <i class="fa-regular fa-toolbox fa-fw"></i>
@@ -458,7 +458,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
                            href="/groceries"
                         >
                             <span>
@@ -478,7 +478,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
                            href="/tools"
                         >
                             <span>
@@ -569,104 +569,447 @@
 	
 	
 
-<section class="tools-page" aria-labelledby="tools-page-title">
-    <div class="tools-page__hero">
-        <p class="tools-page__eyebrow">Tools shelf</p>
-        <h1 id="tools-page-title">Small tools, kept in reach.</h1>
+<section class="groceries-page" aria-labelledby="groceries-page-title">
+    <div class="groceries-page__hero">
+        <p class="groceries-page__eyebrow">Groceries Box</p>
+        <h1 id="groceries-page-title">A useful shelf, not a loud dashboard.</h1>
         <p>
-            Inspired by a groceries box, this page gathers the practical corners of the site:
-            public rooms, private writing tools, and paths back into the archive.
+            This is the Acha-style groceries box rebuilt for feng: filterable tools,
+            self-hosted rooms, writing paths, feeds, and small shortcuts.
         </p>
     </div>
 
-    
-        <section class="tools-group" aria-labelledby="tools-group-0">
-            <div class="tools-group__head">
-                <span>public branches</span>
-                <h2 id="tools-group-0">Network rooms</h2>
-            </div>
-            <div class="tools-grid">
+    <div class="groceries-controls" aria-label="Groceries filters">
+        <div class="groceries-control-group" role="group" aria-label="Filter by type">
+            
+                <button type="button" data-grocery-filter="all" class="is-active">All</button>
+            
+                <button type="button" data-grocery-filter="service" class="">Services</button>
+            
+                <button type="button" data-grocery-filter="tool" class="">Tools</button>
+            
+                <button type="button" data-grocery-filter="writing" class="">Writing</button>
+            
+                <button type="button" data-grocery-filter="utility" class="">Utilities</button>
+            
+        </div>
+
+        <label class="groceries-select">
+            <span>Source</span>
+            <select data-grocery-source>
                 
-                    <article class="tool-card">
-                        <a href="https://api.feng.xx.kg/" target=&#34;_blank&#34; rel=&#34;noopener&#34;>
-                            <span class="tool-card__mark">api</span>
-                            <div>
-                                <h3>API Gateway</h3>
-                                <p>A private gateway for routing, access, and small service experiments.</p>
-                                <small>api.feng.xx.kg &rarr;</small>
-                            </div>
-                        </a>
-                    </article>
+                    <option value="all">All sources</option>
                 
-                    <article class="tool-card">
-                        <a href="https://bead.feng.xx.kg/" target=&#34;_blank&#34; rel=&#34;noopener&#34;>
-                            <span class="tool-card__mark">bead</span>
-                            <div>
-                                <h3>BeadForge</h3>
-                                <p>A visual workspace for turning images into bead patterns and making steps.</p>
-                                <small>bead.feng.xx.kg &rarr;</small>
-                            </div>
-                        </a>
-                    </article>
+                    <option value="self-hosted">Self-hosted</option>
                 
-                    <article class="tool-card">
-                        <a href="https://agent.feng.xx.kg/" target=&#34;_blank&#34; rel=&#34;noopener&#34;>
-                            <span class="tool-card__mark">lab</span>
-                            <div>
-                                <h3>Agent Lab</h3>
-                                <p>A focused room for guided thinking, review loops, and quiet sessions.</p>
-                                <small>agent.feng.xx.kg &rarr;</small>
-                            </div>
-                        </a>
-                    </article>
+                    <option value="original">Original</option>
                 
-            </div>
-        </section>
-    
-        <section class="tools-group" aria-labelledby="tools-group-1">
-            <div class="tools-group__head">
-                <span>inside this site</span>
-                <h2 id="tools-group-1">Site utilities</h2>
-            </div>
-            <div class="tools-grid">
+                    <option value="site">This site</option>
                 
-                    <article class="tool-card">
-                        <a href="/write/" >
-                            <span class="tool-card__mark">new</span>
-                            <div>
-                                <h3>New Note</h3>
-                                <p>A private writing desk for shaping and publishing Markdown notes.</p>
-                                <small>owner-only publishing &rarr;</small>
-                            </div>
-                        </a>
-                    </article>
+                    <option value="external">External</option>
                 
-                    <article class="tool-card">
-                        <a href="/archives/" >
-                            <span class="tool-card__mark">arc</span>
-                            <div>
-                                <h3>Archive</h3>
-                                <p>The long-term shelf for notes, fragments, and small records.</p>
-                                <small>notes shelf &rarr;</small>
-                            </div>
-                        </a>
-                    </article>
-                
-                    <article class="tool-card">
-                        <a href="/projects/" >
-                            <span class="tool-card__mark">work</span>
-                            <div>
-                                <h3>Projects</h3>
-                                <p>A quiet index of the connected tools and experiments around this site.</p>
-                                <small>work index &rarr;</small>
-                            </div>
-                        </a>
-                    </article>
-                
-            </div>
-        </section>
-    
+            </select>
+        </label>
+
+        <label class="groceries-select">
+            <span>Sort</span>
+            <select data-grocery-sort>
+                <option value="name-asc">Name A-Z</option>
+                <option value="name-desc">Name Z-A</option>
+                <option value="type-asc">Type A-Z</option>
+                <option value="source-asc">Source A-Z</option>
+                <option value="tag-asc">Tag A-Z</option>
+            </select>
+        </label>
+
+        <div class="groceries-view-toggle" role="group" aria-label="View mode">
+            <button type="button" data-grocery-view="grid" class="is-active">Grid</button>
+            <button type="button" data-grocery-view="list">List</button>
+        </div>
+
+        <p class="grocery-count" aria-live="polite"><span data-grocery-count>12</span> items</p>
+    </div>
+
+    <div class="groceries-grid" data-groceries-box>
+        
+            <article
+                class="grocery-card"
+                data-type="service"
+                data-source="self-hosted"
+                data-name="API Gateway"
+                data-tags="gateway service routing network">
+                <a href="https://api.feng.xx.kg/" target=&#34;_blank&#34; rel=&#34;noopener&#34;>
+                    <span class="grocery-card__mark">api</span>
+                    <div class="grocery-card__body">
+                        <div class="grocery-card__meta">
+                            <span>Services</span>
+                            <span>Self-hosted</span>
+                            <span>online</span>
+                        </div>
+                        <h2>API Gateway</h2>
+                        <p>A private API routing branch for small service experiments and access management.</p>
+                        <div class="grocery-card__tags" aria-label="Tags">
+                            
+                                <span># gateway</span>
+                            
+                                <span># service</span>
+                            
+                                <span># routing</span>
+                            
+                                <span># network</span>
+                            
+                        </div>
+                    </div>
+                </a>
+            </article>
+        
+            <article
+                class="grocery-card"
+                data-type="tool"
+                data-source="self-hosted"
+                data-name="BeadForge"
+                data-tags="craft image guide tool">
+                <a href="https://bead.feng.xx.kg/" target=&#34;_blank&#34; rel=&#34;noopener&#34;>
+                    <span class="grocery-card__mark">bead</span>
+                    <div class="grocery-card__body">
+                        <div class="grocery-card__meta">
+                            <span>Tools</span>
+                            <span>Self-hosted</span>
+                            <span>online</span>
+                        </div>
+                        <h2>BeadForge</h2>
+                        <p>A visual helper for turning images into bead patterns and practical making steps.</p>
+                        <div class="grocery-card__tags" aria-label="Tags">
+                            
+                                <span># craft</span>
+                            
+                                <span># image</span>
+                            
+                                <span># guide</span>
+                            
+                                <span># tool</span>
+                            
+                        </div>
+                    </div>
+                </a>
+            </article>
+        
+            <article
+                class="grocery-card"
+                data-type="service"
+                data-source="self-hosted"
+                data-name="Agent Lab"
+                data-tags="agent thinking workflow ai">
+                <a href="https://agent.feng.xx.kg/" target=&#34;_blank&#34; rel=&#34;noopener&#34;>
+                    <span class="grocery-card__mark">lab</span>
+                    <div class="grocery-card__body">
+                        <div class="grocery-card__meta">
+                            <span>Services</span>
+                            <span>Self-hosted</span>
+                            <span>online</span>
+                        </div>
+                        <h2>Agent Lab</h2>
+                        <p>A focused AI room for guided thinking, review loops, and structured sessions.</p>
+                        <div class="grocery-card__tags" aria-label="Tags">
+                            
+                                <span># agent</span>
+                            
+                                <span># thinking</span>
+                            
+                                <span># workflow</span>
+                            
+                                <span># ai</span>
+                            
+                        </div>
+                    </div>
+                </a>
+            </article>
+        
+            <article
+                class="grocery-card"
+                data-type="writing"
+                data-source="original"
+                data-name="New Note"
+                data-tags="writing markdown private publish">
+                <a href="/write/" >
+                    <span class="grocery-card__mark">new</span>
+                    <div class="grocery-card__body">
+                        <div class="grocery-card__meta">
+                            <span>Writing</span>
+                            <span>Original</span>
+                            <span>private</span>
+                        </div>
+                        <h2>New Note</h2>
+                        <p>The owner-only writing desk for drafting and publishing Markdown notes.</p>
+                        <div class="grocery-card__tags" aria-label="Tags">
+                            
+                                <span># writing</span>
+                            
+                                <span># markdown</span>
+                            
+                                <span># private</span>
+                            
+                                <span># publish</span>
+                            
+                        </div>
+                    </div>
+                </a>
+            </article>
+        
+            <article
+                class="grocery-card"
+                data-type="writing"
+                data-source="site"
+                data-name="Archives"
+                data-tags="archive notes timeline blog">
+                <a href="/archives/" >
+                    <span class="grocery-card__mark">arc</span>
+                    <div class="grocery-card__body">
+                        <div class="grocery-card__meta">
+                            <span>Writing</span>
+                            <span>This site</span>
+                            <span>public</span>
+                        </div>
+                        <h2>Archives</h2>
+                        <p>A chronological shelf for posts, fragments, and long-term records.</p>
+                        <div class="grocery-card__tags" aria-label="Tags">
+                            
+                                <span># archive</span>
+                            
+                                <span># notes</span>
+                            
+                                <span># timeline</span>
+                            
+                                <span># blog</span>
+                            
+                        </div>
+                    </div>
+                </a>
+            </article>
+        
+            <article
+                class="grocery-card"
+                data-type="writing"
+                data-source="site"
+                data-name="Categories"
+                data-tags="category index blog map">
+                <a href="/categories/" >
+                    <span class="grocery-card__mark">cat</span>
+                    <div class="grocery-card__body">
+                        <div class="grocery-card__meta">
+                            <span>Writing</span>
+                            <span>This site</span>
+                            <span>public</span>
+                        </div>
+                        <h2>Categories</h2>
+                        <p>Browse writing by broader themes instead of by date.</p>
+                        <div class="grocery-card__tags" aria-label="Tags">
+                            
+                                <span># category</span>
+                            
+                                <span># index</span>
+                            
+                                <span># blog</span>
+                            
+                                <span># map</span>
+                            
+                        </div>
+                    </div>
+                </a>
+            </article>
+        
+            <article
+                class="grocery-card"
+                data-type="writing"
+                data-source="site"
+                data-name="Tags"
+                data-tags="tag index topic blog">
+                <a href="/tags/" >
+                    <span class="grocery-card__mark">tag</span>
+                    <div class="grocery-card__body">
+                        <div class="grocery-card__meta">
+                            <span>Writing</span>
+                            <span>This site</span>
+                            <span>public</span>
+                        </div>
+                        <h2>Tags</h2>
+                        <p>A finer index for recurring topics, tools, and small research trails.</p>
+                        <div class="grocery-card__tags" aria-label="Tags">
+                            
+                                <span># tag</span>
+                            
+                                <span># index</span>
+                            
+                                <span># topic</span>
+                            
+                                <span># blog</span>
+                            
+                        </div>
+                    </div>
+                </a>
+            </article>
+        
+            <article
+                class="grocery-card"
+                data-type="service"
+                data-source="site"
+                data-name="Projects"
+                data-tags="project portfolio network index">
+                <a href="/projects/" >
+                    <span class="grocery-card__mark">work</span>
+                    <div class="grocery-card__body">
+                        <div class="grocery-card__meta">
+                            <span>Services</span>
+                            <span>This site</span>
+                            <span>public</span>
+                        </div>
+                        <h2>Projects</h2>
+                        <p>The project index for public branches and experiments around this site.</p>
+                        <div class="grocery-card__tags" aria-label="Tags">
+                            
+                                <span># project</span>
+                            
+                                <span># portfolio</span>
+                            
+                                <span># network</span>
+                            
+                                <span># index</span>
+                            
+                        </div>
+                    </div>
+                </a>
+            </article>
+        
+            <article
+                class="grocery-card"
+                data-type="tool"
+                data-source="external"
+                data-name="GitHub"
+                data-tags="github code repository profile">
+                <a href="https://github.com/feng129685" target=&#34;_blank&#34; rel=&#34;noopener&#34;>
+                    <span class="grocery-card__mark">git</span>
+                    <div class="grocery-card__body">
+                        <div class="grocery-card__meta">
+                            <span>Tools</span>
+                            <span>External</span>
+                            <span>public</span>
+                        </div>
+                        <h2>GitHub</h2>
+                        <p>The public code trace and long-term place for repositories.</p>
+                        <div class="grocery-card__tags" aria-label="Tags">
+                            
+                                <span># github</span>
+                            
+                                <span># code</span>
+                            
+                                <span># repository</span>
+                            
+                                <span># profile</span>
+                            
+                        </div>
+                    </div>
+                </a>
+            </article>
+        
+            <article
+                class="grocery-card"
+                data-type="utility"
+                data-source="site"
+                data-name="RSS Feed"
+                data-tags="rss feed subscribe updates">
+                <a href="/rss2.xml" >
+                    <span class="grocery-card__mark">rss</span>
+                    <div class="grocery-card__body">
+                        <div class="grocery-card__meta">
+                            <span>Utilities</span>
+                            <span>This site</span>
+                            <span>public</span>
+                        </div>
+                        <h2>RSS Feed</h2>
+                        <p>A feed endpoint for following site updates with a reader.</p>
+                        <div class="grocery-card__tags" aria-label="Tags">
+                            
+                                <span># rss</span>
+                            
+                                <span># feed</span>
+                            
+                                <span># subscribe</span>
+                            
+                                <span># updates</span>
+                            
+                        </div>
+                    </div>
+                </a>
+            </article>
+        
+            <article
+                class="grocery-card"
+                data-type="utility"
+                data-source="site"
+                data-name="Friend Links"
+                data-tags="friends links network web">
+                <a href="/friends/" >
+                    <span class="grocery-card__mark">link</span>
+                    <div class="grocery-card__body">
+                        <div class="grocery-card__meta">
+                            <span>Utilities</span>
+                            <span>This site</span>
+                            <span>public</span>
+                        </div>
+                        <h2>Friend Links</h2>
+                        <p>A quiet shelf for classmates, adjacent sites, and nearby rooms on the web.</p>
+                        <div class="grocery-card__tags" aria-label="Tags">
+                            
+                                <span># friends</span>
+                            
+                                <span># links</span>
+                            
+                                <span># network</span>
+                            
+                                <span># web</span>
+                            
+                        </div>
+                    </div>
+                </a>
+            </article>
+        
+            <article
+                class="grocery-card"
+                data-type="utility"
+                data-source="site"
+                data-name="Tools"
+                data-tags="tools shelf shortcut site">
+                <a href="/tools/" >
+                    <span class="grocery-card__mark">tool</span>
+                    <div class="grocery-card__body">
+                        <div class="grocery-card__meta">
+                            <span>Utilities</span>
+                            <span>This site</span>
+                            <span>public</span>
+                        </div>
+                        <h2>Tools</h2>
+                        <p>A simple path list for the most frequently used pages and services.</p>
+                        <div class="grocery-card__tags" aria-label="Tags">
+                            
+                                <span># tools</span>
+                            
+                                <span># shelf</span>
+                            
+                                <span># shortcut</span>
+                            
+                                <span># site</span>
+                            
+                        </div>
+                    </div>
+                </a>
+            </article>
+        
+    </div>
+
+    <p class="groceries-empty" data-grocery-empty hidden>No matching items. Clear the filters and try again.</p>
 </section>
+
+<script defer src="/js/groceries-box.js?v=20260608-function-parity"></script>
 
 	
 
